@@ -1,0 +1,450 @@
+{
+  "statistics": {
+    "api_calls": 40,
+    "n_sessions": 20,
+    "n_successful_interventions": 20,
+    "n_successful_judge": 20,
+    "generator_failures": 0,
+    "judge_parse_failures": 0,
+    "overall_score": {
+      "mean": 7.025,
+      "std": 0.9516433155337141,
+      "min": 5.0,
+      "max": 8.5,
+      "n": 20
+    },
+    "dimension_means": {
+      "relevance": 7.85,
+      "personalization": 5.1,
+      "urgency": 5.8,
+      "clarity": 9.35
+    },
+    "unique_interventions": 20,
+    "models": {
+      "generator": "gemini-2.5-flash-lite",
+      "judge": "gemini-flash-latest"
+    }
+  },
+  "results": [
+    {
+      "test_row_index": 1163,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.00902008730918169,
+      "category": "electronics",
+      "cart_value": 511.67,
+      "views_before_cart": 7.0,
+      "time_to_cart": 469811.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.357)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.218)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.146)",
+      "intervention": "Don't miss out on your electronics; that 7-view interest is high, but time is ticking!",
+      "judge_raw": "{\n  \"relevance\": 9,\n  \"personalization\": 8,\n  \"urgency\": 7,\n  \"clarity\": 9,\n  \"overall\": 8.25,\n  \"comment\": \"The message effectively leverages the specific view count and category to address the high-intent but high-risk signals identified in the user context.\"\n}",
+      "judge": {
+        "relevance": 9.0,
+        "personalization": 8.0,
+        "urgency": 7.0,
+        "clarity": 9.0,
+        "overall": 8.25,
+        "comment": "The message effectively leverages the specific view count and category to address the high-intent but high-risk signals identified in the user context."
+      }
+    },
+    {
+      "test_row_index": 3079,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.016879908740520477,
+      "category": "electronics",
+      "cart_value": 238.48,
+      "views_before_cart": 25.0,
+      "time_to_cart": 514677.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.376)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.213)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.127)",
+      "intervention": "Don't miss out on your new electronics \u2013 complete your order now before it's gone!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 7,\n  \"clarity\": 10,\n  \"overall\": 7.25,\n  \"comment\": \"The message identifies the correct category and provides a clear call to action, but fails to leverage the high engagement signals or specific cart value provided in the context.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 7.0,
+        "clarity": 10.0,
+        "overall": 7.25,
+        "comment": "The message identifies the correct category and provides a clear call to action, but fails to leverage the high engagement signals or specific cart value provided in the context."
+      }
+    },
+    {
+      "test_row_index": 4728,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.06107521802186966,
+      "category": "electronics",
+      "cart_value": 401.3,
+      "views_before_cart": 24.0,
+      "time_to_cart": 336931.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.370)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.212)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.143)",
+      "intervention": "Don't miss out on your electronics; your cart is waiting to be completed.",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 3,\n  \"clarity\": 9,\n  \"overall\": 6.0,\n  \"comment\": \"While the message correctly identifies the category and intent, it fails to leverage the specific cart value or address the high-deliberation behavior indicated by the user's 24 views and long time-to-cart.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.0,
+        "comment": "While the message correctly identifies the category and intent, it fails to leverage the specific cart value or address the high-deliberation behavior indicated by the user's 24 views and long time-to-cart."
+      }
+    },
+    {
+      "test_row_index": 19537,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.18644411861896515,
+      "category": "electronics",
+      "cart_value": 771.96,
+      "views_before_cart": 19.0,
+      "time_to_cart": 209034.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.359)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.228)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.134)",
+      "intervention": "Don't miss out on this electronics deal; your cart is waiting.",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 5,\n  \"clarity\": 9,\n  \"overall\": 6.5,\n  \"comment\": \"The message correctly identifies the category but fails to leverage the high cart value or the user's extensive research time to create a compelling, personalized reason to return.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "The message correctly identifies the category but fails to leverage the high cart value or the user's extensive research time to create a compelling, personalized reason to return."
+      }
+    },
+    {
+      "test_row_index": 7111,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.28814223408699036,
+      "category": "unknown",
+      "cart_value": 28.43,
+      "views_before_cart": 1.0,
+      "time_to_cart": 58106.0,
+      "lime_summary": "- total_events_before_cart <= -0.43  (\u2193 purchase, weight -0.232)\n- views_before_cart <= -0.43  (\u2191 purchase, weight +0.174)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.136)",
+      "intervention": "Don't miss out on your item \u2013 it's waiting for you!",
+      "judge_raw": "{\n  \"relevance\": 5,\n  \"personalization\": 2,\n  \"urgency\": 4,\n  \"clarity\": 9,\n  \"overall\": 5.0,\n  \"comment\": \"While the message is clear and addresses the abandonment, it fails to leverage the specific cart value or category and uses only a generic nudge.\"\n}",
+      "judge": {
+        "relevance": 5.0,
+        "personalization": 2.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 5.0,
+        "comment": "While the message is clear and addresses the abandonment, it fails to leverage the specific cart value or category and uses only a generic nudge."
+      }
+    },
+    {
+      "test_row_index": 889,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.29398012161254883,
+      "category": "electronics",
+      "cart_value": 198.2,
+      "views_before_cart": 4.0,
+      "time_to_cart": 112864.0,
+      "lime_summary": "- time_to_cart > -0.03  (\u2193 purchase, weight -0.135)\n- -0.25 < views_before_cart <= 0.11  (\u2193 purchase, weight -0.061)\n- avg_time_between_events > -0.01  (\u2191 purchase, weight +0.055)",
+      "intervention": "Still thinking about that awesome electronic gadget? Don't miss out on it!",
+      "judge_raw": "{\n  \"relevance\": 6,\n  \"personalization\": 4,\n  \"urgency\": 5,\n  \"clarity\": 9,\n  \"overall\": 6.0,\n  \"comment\": \"The message is clear and identifies the category, but it fails to leverage the specific cart value or address the slow decision-making process indicated by the risk signals.\"\n}",
+      "judge": {
+        "relevance": 6.0,
+        "personalization": 4.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 6.0,
+        "comment": "The message is clear and identifies the category, but it fails to leverage the specific cart value or address the slow decision-making process indicated by the risk signals."
+      }
+    },
+    {
+      "test_row_index": 1951,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.30499881505966187,
+      "category": "computers",
+      "cart_value": 126.67,
+      "views_before_cart": 12.0,
+      "time_to_cart": 28699.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.356)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.232)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.142)",
+      "intervention": "Don't let this powerful computer slip away, grab it before it's gone.",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 7,\n  \"clarity\": 9,\n  \"overall\": 7.0,\n  \"comment\": \"The message correctly identifies the category and adds urgency, but fails to leverage the specific cart value or the high engagement signals provided in the context.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 7.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "The message correctly identifies the category and adds urgency, but fails to leverage the specific cart value or the high engagement signals provided in the context."
+      }
+    },
+    {
+      "test_row_index": 13751,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3253954350948334,
+      "category": "electronics",
+      "cart_value": 299.88,
+      "views_before_cart": 27.0,
+      "time_to_cart": 2280.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.358)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.235)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.134)",
+      "intervention": "Still thinking about that awesome electronics deal? Grab it before it's gone!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 6,\n  \"clarity\": 9,\n  \"overall\": 6.75,\n  \"comment\": \"The message identifies the category and intent but fails to leverage the high engagement metrics or specific cart value provided in the context.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 6.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "The message identifies the category and intent but fails to leverage the high engagement metrics or specific cart value provided in the context."
+      }
+    },
+    {
+      "test_row_index": 1895,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3260068893432617,
+      "category": "appliances",
+      "cart_value": 71.82,
+      "views_before_cart": 8.0,
+      "time_to_cart": 31772.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.373)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.218)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.106)",
+      "intervention": "Don't let this essential appliance slip away; it's waiting for you!",
+      "judge_raw": "{\n  \"relevance\": 6,\n  \"personalization\": 4,\n  \"urgency\": 5,\n  \"clarity\": 9,\n  \"overall\": 6.0,\n  \"comment\": \"While the message identifies the category, it fails to leverage the specific behavioral data or price point to address the high abandonment risk.\"\n}",
+      "judge": {
+        "relevance": 6.0,
+        "personalization": 4.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 6.0,
+        "comment": "While the message identifies the category, it fails to leverage the specific behavioral data or price point to address the high abandonment risk."
+      }
+    },
+    {
+      "test_row_index": 14138,
+      "cohort": "high_conf_abandon",
+      "actual": 0,
+      "predicted_prob_purchase": 0.32621023058891296,
+      "category": "electronics",
+      "cart_value": 1085.97,
+      "views_before_cart": 3.0,
+      "time_to_cart": 46028.0,
+      "lime_summary": "- time_to_cart > -0.03  (\u2193 purchase, weight -0.135)\n- initial_cart_value > 0.28  (\u2191 purchase, weight +0.114)\n- avg_cart_item_price > 0.30  (\u2193 purchase, weight -0.078)",
+      "intervention": "That premium electronics piece is still waiting \u2013 don't miss out on this high-value item before it's gone.",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 5,\n  \"urgency\": 7,\n  \"clarity\": 9,\n  \"overall\": 7.25,\n  \"comment\": \"The message correctly identifies the high-value electronics category but lacks specific details like the exact price or item name to fully leverage the user context.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 5.0,
+        "urgency": 7.0,
+        "clarity": 9.0,
+        "overall": 7.25,
+        "comment": "The message correctly identifies the high-value electronics category but lacks specific details like the exact price or item name to fully leverage the user context."
+      }
+    },
+    {
+      "test_row_index": 7574,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9998248219490051,
+      "category": "electronics",
+      "cart_value": 257.38,
+      "views_before_cart": 7.0,
+      "time_to_cart": 588.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.360)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.229)\n- initial_cart_items <= -0.07  (\u2191 purchase, weight +0.140)",
+      "intervention": "Don't miss out on your electronics \u2013 finish checkout now before it's gone!",
+      "judge_raw": "{\n  \"relevance\": 9,\n  \"personalization\": 5,\n  \"urgency\": 7,\n  \"clarity\": 10,\n  \"overall\": 7.75,\n  \"comment\": \"The message accurately targets the category and risk signal but fails to leverage the specific cart value or high engagement metrics provided in the context.\"\n}",
+      "judge": {
+        "relevance": 9.0,
+        "personalization": 5.0,
+        "urgency": 7.0,
+        "clarity": 10.0,
+        "overall": 7.75,
+        "comment": "The message accurately targets the category and risk signal but fails to leverage the specific cart value or high engagement metrics provided in the context."
+      }
+    },
+    {
+      "test_row_index": 9431,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9995080232620239,
+      "category": "electronics",
+      "cart_value": 89.84,
+      "views_before_cart": 10.0,
+      "time_to_cart": 1488.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.362)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.229)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.139)",
+      "intervention": "Still thinking about that $89.84 electronics find? Don't miss out, grab it before it's gone!",
+      "judge_raw": "{\n  \"relevance\": 9,\n  \"personalization\": 8,\n  \"urgency\": 7,\n  \"clarity\": 10,\n  \"overall\": 8.5,\n  \"comment\": \"The message effectively uses the specific cart value and category to address the user's high engagement while creating a standard sense of scarcity.\"\n}",
+      "judge": {
+        "relevance": 9.0,
+        "personalization": 8.0,
+        "urgency": 7.0,
+        "clarity": 10.0,
+        "overall": 8.5,
+        "comment": "The message effectively uses the specific cart value and category to address the user's high engagement while creating a standard sense of scarcity."
+      }
+    },
+    {
+      "test_row_index": 11988,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9986016154289246,
+      "category": "electronics",
+      "cart_value": 161.87,
+      "views_before_cart": 5.0,
+      "time_to_cart": 542.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.359)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.224)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.126)",
+      "intervention": "Don't miss out on your electronics \u2013 it's waiting for you!",
+      "judge_raw": "{\n  \"relevance\": 7,\n  \"personalization\": 4,\n  \"urgency\": 5,\n  \"clarity\": 9,\n  \"overall\": 6.25,\n  \"comment\": \"The message identifies the correct category but fails to leverage the specific cart value or address the high-deliberation risk signals identified in the context.\"\n}",
+      "judge": {
+        "relevance": 7.0,
+        "personalization": 4.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message identifies the correct category but fails to leverage the specific cart value or address the high-deliberation risk signals identified in the context."
+      }
+    },
+    {
+      "test_row_index": 5978,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9985755085945129,
+      "category": "electronics",
+      "cart_value": 460.5,
+      "views_before_cart": 8.0,
+      "time_to_cart": 339.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.350)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.234)\n- initial_cart_items <= -0.07  (\u2191 purchase, weight +0.138)",
+      "intervention": "Still thinking about that $460.50 electronics find? Don't let it slip away!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 9,\n  \"urgency\": 6,\n  \"clarity\": 10,\n  \"overall\": 8.25,\n  \"comment\": \"The message effectively uses the exact cart value and category to address the user's high engagement, though the urgency remains somewhat generic.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 6.0,
+        "clarity": 10.0,
+        "overall": 8.25,
+        "comment": "The message effectively uses the exact cart value and category to address the user's high engagement, though the urgency remains somewhat generic."
+      }
+    },
+    {
+      "test_row_index": 7955,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9985657930374146,
+      "category": "electronics",
+      "cart_value": 696.15,
+      "views_before_cart": 6.0,
+      "time_to_cart": 576.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.362)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.227)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.136)",
+      "intervention": "Don't miss out on your $696.15 electronics\u2014complete your order now before it's gone.",
+      "judge_raw": "{\n  \"relevance\": 9,\n  \"personalization\": 8,\n  \"urgency\": 7,\n  \"clarity\": 10,\n  \"overall\": 8.5,\n  \"comment\": \"The message effectively leverages the specific cart value and category while addressing the high-intent but hesitant behavior with a clear call to action.\"\n}",
+      "judge": {
+        "relevance": 9.0,
+        "personalization": 8.0,
+        "urgency": 7.0,
+        "clarity": 10.0,
+        "overall": 8.5,
+        "comment": "The message effectively leverages the specific cart value and category while addressing the high-intent but hesitant behavior with a clear call to action."
+      }
+    },
+    {
+      "test_row_index": 3555,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9985470175743103,
+      "category": "electronics",
+      "cart_value": 161.9,
+      "views_before_cart": 7.0,
+      "time_to_cart": 454.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.358)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.233)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.125)",
+      "intervention": "Don't miss out on your electronics \u2013 they're waiting for you!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 5,\n  \"clarity\": 9,\n  \"overall\": 6.5,\n  \"comment\": \"The message identifies the correct category but fails to leverage the specific cart value or address the high-intent signals identified in the user context.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "The message identifies the correct category but fails to leverage the specific cart value or address the high-intent signals identified in the user context."
+      }
+    },
+    {
+      "test_row_index": 967,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9984118342399597,
+      "category": "electronics",
+      "cart_value": 203.35,
+      "views_before_cart": 5.0,
+      "time_to_cart": 756.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.367)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.225)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.125)",
+      "intervention": "Your new electronics are waiting, don't miss out on this popular item!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 6,\n  \"clarity\": 9,\n  \"overall\": 6.75,\n  \"comment\": \"The message correctly identifies the category and high interest level but fails to leverage the specific cart value or provide a concrete time-bound incentive to mitigate the high-view abandonment risk.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 6.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "The message correctly identifies the category and high interest level but fails to leverage the specific cart value or provide a concrete time-bound incentive to mitigate the high-view abandonment risk."
+      }
+    },
+    {
+      "test_row_index": 9828,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9981895089149475,
+      "category": "electronics",
+      "cart_value": 102.94,
+      "views_before_cart": 9.0,
+      "time_to_cart": 301.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.375)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.214)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.128)",
+      "intervention": "Don't miss out on your electronics \u2013 your cart is waiting!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 5,\n  \"urgency\": 4,\n  \"clarity\": 10,\n  \"overall\": 6.75,\n  \"comment\": \"The message correctly identifies the category but fails to leverage the high engagement signals or specific cart value to create a compelling reason to return.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 5.0,
+        "urgency": 4.0,
+        "clarity": 10.0,
+        "overall": 6.75,
+        "comment": "The message correctly identifies the category but fails to leverage the high engagement signals or specific cart value to create a compelling reason to return."
+      }
+    },
+    {
+      "test_row_index": 15352,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9980979561805725,
+      "category": "electronics",
+      "cart_value": 28.55,
+      "views_before_cart": 16.0,
+      "time_to_cart": 715.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.384)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.210)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.126)",
+      "intervention": "Don't miss out on your new electronics, it's almost gone!",
+      "judge_raw": "{\n  \"relevance\": 8,\n  \"personalization\": 4,\n  \"urgency\": 7,\n  \"clarity\": 9,\n  \"overall\": 7.0,\n  \"comment\": \"The message correctly identifies the category and risk of loss, but fails to leverage the specific high-intent signals like the high view count or cart value.\"\n}",
+      "judge": {
+        "relevance": 8.0,
+        "personalization": 4.0,
+        "urgency": 7.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "The message correctly identifies the category and risk of loss, but fails to leverage the specific high-intent signals like the high view count or cart value."
+      }
+    },
+    {
+      "test_row_index": 8882,
+      "cohort": "high_conf_purchase",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9971421360969543,
+      "category": "electronics",
+      "cart_value": 132.31,
+      "views_before_cart": 10.0,
+      "time_to_cart": 916.0,
+      "lime_summary": "- total_events_before_cart > 0.11  (\u2191 purchase, weight +0.393)\n- views_before_cart > 0.11  (\u2193 purchase, weight -0.203)\n- time_to_cart > -0.03  (\u2193 purchase, weight -0.135)",
+      "intervention": "Don't miss out on your $132.31 electronics find; complete your order now.",
+      "judge_raw": "{\n  \"relevance\": 9,\n  \"personalization\": 8,\n  \"urgency\": 6,\n  \"clarity\": 10,\n  \"overall\": 8.25,\n  \"comment\": \"The message effectively uses the specific cart value and category to address the user's high engagement, though the urgency remains relatively generic.\"\n}",
+      "judge": {
+        "relevance": 9.0,
+        "personalization": 8.0,
+        "urgency": 6.0,
+        "clarity": 10.0,
+        "overall": 8.25,
+        "comment": "The message effectively uses the specific cart value and category to address the user's high engagement, though the urgency remains relatively generic."
+      }
+    }
+  ]
+}

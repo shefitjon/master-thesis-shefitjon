@@ -1,0 +1,22 @@
+[
+  "time_to_cart",
+  "hour_of_cart",
+  "day_of_week",
+  "views_before_cart",
+  "total_events_before_cart",
+  "browse_intensity_pre_cart",
+  "unique_products_viewed",
+  "unique_categories_viewed",
+  "unique_brands_viewed",
+  "avg_viewed_price",
+  "max_viewed_price",
+  "min_viewed_price",
+  "price_variance_viewed",
+  "initial_cart_value",
+  "initial_cart_items",
+  "avg_cart_item_price",
+  "avg_time_between_events",
+  "event_acceleration",
+  "category_focus_ratio",
+  "main_category"
+]

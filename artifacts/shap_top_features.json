@@ -1,0 +1,166 @@
+{
+  "LogisticRegression_top20": [
+    {
+      "feature": "views_before_cart",
+      "mean_abs_shap": 2.728579884458793
+    },
+    {
+      "feature": "total_events_before_cart",
+      "mean_abs_shap": 2.682861989946519
+    },
+    {
+      "feature": "category_focus_ratio",
+      "mean_abs_shap": 0.24402912805992366
+    },
+    {
+      "feature": "main_category",
+      "mean_abs_shap": 0.10890811641974718
+    },
+    {
+      "feature": "browse_intensity_pre_cart",
+      "mean_abs_shap": 0.0961257463537606
+    },
+    {
+      "feature": "min_viewed_price",
+      "mean_abs_shap": 0.07716155897754036
+    },
+    {
+      "feature": "unique_products_viewed",
+      "mean_abs_shap": 0.06992515552249232
+    },
+    {
+      "feature": "max_viewed_price",
+      "mean_abs_shap": 0.06291996997222471
+    },
+    {
+      "feature": "day_of_week",
+      "mean_abs_shap": 0.05778389032082268
+    },
+    {
+      "feature": "hour_of_cart",
+      "mean_abs_shap": 0.037738732261177396
+    },
+    {
+      "feature": "unique_brands_viewed",
+      "mean_abs_shap": 0.03746662312381807
+    },
+    {
+      "feature": "avg_viewed_price",
+      "mean_abs_shap": 0.033412232618791324
+    },
+    {
+      "feature": "unique_categories_viewed",
+      "mean_abs_shap": 0.018739097119068463
+    },
+    {
+      "feature": "price_variance_viewed",
+      "mean_abs_shap": 0.007749262606548278
+    },
+    {
+      "feature": "avg_cart_item_price",
+      "mean_abs_shap": 0.0054066967094597
+    },
+    {
+      "feature": "time_to_cart",
+      "mean_abs_shap": 0.0046945557849136016
+    },
+    {
+      "feature": "initial_cart_items",
+      "mean_abs_shap": 0.003425107419276946
+    },
+    {
+      "feature": "avg_time_between_events",
+      "mean_abs_shap": 0.0028441621145223707
+    },
+    {
+      "feature": "event_acceleration",
+      "mean_abs_shap": 0.0013688743538942867
+    },
+    {
+      "feature": "initial_cart_value",
+      "mean_abs_shap": 0.0006723549349409667
+    }
+  ],
+  "RandomForest_top20": [
+    {
+      "feature": "browse_intensity_pre_cart",
+      "mean_abs_shap": 0.035297065252625465
+    },
+    {
+      "feature": "views_before_cart",
+      "mean_abs_shap": 0.0270748975581105
+    },
+    {
+      "feature": "time_to_cart",
+      "mean_abs_shap": 0.018528799973232847
+    },
+    {
+      "feature": "min_viewed_price",
+      "mean_abs_shap": 0.013748782823478996
+    },
+    {
+      "feature": "day_of_week",
+      "mean_abs_shap": 0.013713704868338195
+    },
+    {
+      "feature": "avg_time_between_events",
+      "mean_abs_shap": 0.01180649804492763
+    },
+    {
+      "feature": "avg_cart_item_price",
+      "mean_abs_shap": 0.011555309079925276
+    },
+    {
+      "feature": "total_events_before_cart",
+      "mean_abs_shap": 0.011205690838295786
+    },
+    {
+      "feature": "main_category",
+      "mean_abs_shap": 0.010632605299035099
+    },
+    {
+      "feature": "hour_of_cart",
+      "mean_abs_shap": 0.009594330538661657
+    },
+    {
+      "feature": "price_variance_viewed",
+      "mean_abs_shap": 0.009084017584581237
+    },
+    {
+      "feature": "initial_cart_value",
+      "mean_abs_shap": 0.008030262182453504
+    },
+    {
+      "feature": "category_focus_ratio",
+      "mean_abs_shap": 0.005703004091874702
+    },
+    {
+      "feature": "unique_products_viewed",
+      "mean_abs_shap": 0.005210227053556802
+    },
+    {
+      "feature": "max_viewed_price",
+      "mean_abs_shap": 0.005151722899311189
+    },
+    {
+      "feature": "avg_viewed_price",
+      "mean_abs_shap": 0.004698722086487309
+    },
+    {
+      "feature": "event_acceleration",
+      "mean_abs_shap": 0.0022128332418727492
+    },
+    {
+      "feature": "unique_categories_viewed",
+      "mean_abs_shap": 0.002071014061192988
+    },
+    {
+      "feature": "unique_brands_viewed",
+      "mean_abs_shap": 0.000976079326593848
+    },
+    {
+      "feature": "initial_cart_items",
+      "mean_abs_shap": 2.6597835437270836e-05
+    }
+  ]
+}

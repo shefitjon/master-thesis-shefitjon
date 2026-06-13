@@ -1,0 +1,52 @@
+{
+  "seed": 42,
+  "alpha": 0.05,
+  "mcnemar": {
+    "b": 1540,
+    "c": 1718,
+    "n_discordant": 3258,
+    "p_value": 0.0019244192075605782,
+    "test": "mcnemar_exact",
+    "note": "",
+    "n_test_rows": 19989,
+    "lr_accuracy": 0.5552053629496223,
+    "nn_accuracy": 0.5641102606433538,
+    "lr_f1": 0.46744534291704104,
+    "nn_f1": 0.4810910606872729
+  },
+  "dietterich_5x2cv": {
+    "test": "dietterich_5x2cv_paired_t",
+    "iterations": 5,
+    "per_iter_deltas_lr_minus_nn": [
+      {
+        "p_1": 0.00029401031633158325,
+        "p_2": -0.006527996107606959
+      },
+      {
+        "p_1": -0.012390553879285782,
+        "p_2": 0.0019634417064222642
+      },
+      {
+        "p_1": -0.0049486436031687675,
+        "p_2": -0.003979657297734307
+      },
+      {
+        "p_1": -0.004479717760190349,
+        "p_2": -0.012517808884950021
+      },
+      {
+        "p_1": 0.006083419817258351,
+        "p_2": 0.006035647560749369
+      }
+    ],
+    "mean_delta_lr_minus_nn": -0.003046785813217462,
+    "t_statistic": 0.05212677781918731,
+    "df": 5,
+    "p_value": 0.9604461456600495,
+    "note": "Positive mean delta means LR > NN on F1 across folds; the p-value is two-sided."
+  },
+  "verdict": {
+    "summary": "McNemar p=0.001924 (significant at \u03b1=0.05); 5x2cv paired t-test p=0.9604 (not significant at \u03b1=0.05).",
+    "narrative": "Tests disagree. McNemar operates on the single held-out test set; 5x2cv averages over 10 different splits. A split-robust claim requires both to agree; treat as 'no reliable difference' for the thesis."
+  }
+}
