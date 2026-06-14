@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="bregu" translate="label" sortOrder="400">
+            <label>Bregu</label>
+        </tab>
+        <section id="cart_recovery_ab" translate="label" type="text" sortOrder="10"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Cart Recovery A/B</label>
+            <tab>bregu</tab>
+            <resource>Bregu_CartRecoveryAb::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="ab_split" translate="label comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Treatment Share (%)</label>
+                    <comment>Percentage of eligible sessions assigned to the treatment group.</comment>
+                    <validate>validate-digits validate-digits-range digits-range-0-100</validate>
+                </field>
+                <field id="risk_threshold" translate="label comment" type="text" sortOrder="30"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Risk Threshold</label>
+                    <comment>Show the intervention when P(abandon) is at or above this value (0-1).</comment>
+                </field>
+                <field id="intervention_source" translate="label" type="select" sortOrder="40"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Intervention Source</label>
+                    <source_model>Bregu\CartRecoveryAb\Model\Config\Source\InterventionSource</source_model>
+                </field>
+                <field id="trigger" translate="label" type="select" sortOrder="50"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Trigger</label>
+                    <source_model>Bregu\CartRecoveryAb\Model\Config\Source\Trigger</source_model>
+                </field>
+                <field id="gemini_api_key" translate="label comment" type="obscure" sortOrder="60"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Gemini API Key</label>
+                    <comment>Used only when Intervention Source is Live. Stored encrypted.</comment>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    <depends>
+                        <field id="intervention_source">live</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,25 @@
+{
+    "bregu_cart_recovery_event": {
+        "column": {
+            "entity_id": true,
+            "session_key": true,
+            "bucket": true,
+            "risk_score": true,
+            "signal": true,
+            "shown": true,
+            "dismissed": true,
+            "converted": true,
+            "order_value": true,
+            "order_id": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "BREGU_CART_RECOVERY_EVENT_SESSION_KEY": true
+        },
+        "index": {
+            "BREGU_CART_RECOVERY_EVENT_BUCKET": true
+        }
+    }
+}

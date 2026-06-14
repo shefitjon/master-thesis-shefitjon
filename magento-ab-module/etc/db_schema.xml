@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="bregu_cart_recovery_event" resource="default" engine="innodb"
+           comment="A/B impressions and outcomes for the cart-recovery experiment">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true" comment="Primary key"/>
+        <column xsi:type="varchar" name="session_key" length="64" nullable="false" comment="Stable per-cart key (quote id)"/>
+        <column xsi:type="varchar" name="bucket" length="16" nullable="false" comment="control or treatment"/>
+        <column xsi:type="decimal" name="risk_score" scale="4" precision="6" nullable="true" comment="P(abandon) at exposure"/>
+        <column xsi:type="varchar" name="signal" length="64" nullable="true" comment="Dominant pre-cart signal"/>
+        <column xsi:type="smallint" name="shown" unsigned="true" nullable="false" default="0" comment="Intervention impression flag"/>
+        <column xsi:type="smallint" name="dismissed" unsigned="true" nullable="false" default="0" comment="User dismissed flag"/>
+        <column xsi:type="smallint" name="converted" unsigned="true" nullable="false" default="0" comment="Purchase completed flag"/>
+        <column xsi:type="decimal" name="order_value" scale="4" precision="12" nullable="true" comment="Order grand total when converted"/>
+        <column xsi:type="int" name="order_id" unsigned="true" nullable="true" comment="Sales order entity id"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Row creation time"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Row update time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="BREGU_CART_RECOVERY_EVENT_SESSION_KEY">
+            <column name="session_key"/>
+        </constraint>
+        <index referenceId="BREGU_CART_RECOVERY_EVENT_BUCKET" indexType="btree">
+            <column name="bucket"/>
+        </index>
+    </table>
+</schema>

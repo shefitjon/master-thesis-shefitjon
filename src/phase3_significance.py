@@ -1,3 +1,12 @@
+"""
+Phase 2/3 — is the NN really better than LR, or is it luck?
+
+Two tests, on purpose. McNemar looks at one held-out split; the Dietterich
+5x2cv test repeats the comparison over ten splits. They disagree here (McNemar
+p=0.002, 5x2cv p=0.96), and the rule is simple: a single split can get lucky,
+so when the split-robust test says 'no difference', that is the honest verdict
+— which lets us keep LR for interpretability at no real cost.
+"""
 import json
 import math
 import pickle
@@ -9,14 +18,18 @@ from scipy.stats import binomtest, t as t_dist
 from sklearn.metrics import f1_score
 warnings.filterwarnings('ignore')
 HERE = Path(__file__).resolve().parents[1] / 'artifacts'
-sys.path.insert(0, str(HERE))
-from train_cv_corrected import load_and_prepare, fit_final_sklearn, fit_final_nn, SEED
+# Make the sibling Phase-2 module importable so we reuse the exact same data
+# loading and fold structure rather than re-implementing them.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from phase2_train import load_and_prepare, fit_final_sklearn, fit_final_nn, SEED
 from sklearn.linear_model import LogisticRegression
 SIGNIFICANCE_ALPHA = 0.05
 N_CV_ITERATIONS = 5
 
 def mcnemar_exact_test(lr_correct: np.ndarray, nn_correct: np.ndarray):
     assert lr_correct.shape == nn_correct.shape
+    # Only the disagreements matter: b = LR right while NN wrong, c = the reverse.
+    # If the models were equal, b and c should be ~50/50 — an exact binomial test.
     b = int(((lr_correct == 1) & (nn_correct == 0)).sum())
     c = int(((lr_correct == 0) & (nn_correct == 1)).sum())
     n = b + c
@@ -61,6 +74,8 @@ def dietterich_5x2cv():
     n = len(X_tr)
     print(f'[5x2cv] {n} rows in training split')
     deltas = []
+    # Five times: split in half, train each model on A and score on B, then swap.
+    # Each pass yields an LR-minus-NN F1 difference; we want their spread.
     for i in range(N_CV_ITERATIONS):
         iter_seed = SEED + i * 7
         rng = np.random.default_rng(iter_seed)
@@ -77,6 +92,8 @@ def dietterich_5x2cv():
         p_2 = float(f1_lr_A - f1_nn_A)
         print(f'[5x2cv] iter {i + 1}/{N_CV_ITERATIONS}: LR F1 B={f1_lr_B:.4f} A={f1_lr_A:.4f} | NN F1 B={f1_nn_B:.4f} A={f1_nn_A:.4f} | p1={p_1:+.4f} p2={p_2:+.4f}')
         deltas.append((p_1, p_2))
+    # Dietterich's combined 5x2cv t-statistic: first-fold difference over the
+    # pooled within-pair variance. Small |t| / large p => no reliable difference.
     variances = []
     for p_1, p_2 in deltas:
         pbar = (p_1 + p_2) / 2.0
@@ -125,6 +142,8 @@ def make_verdict(mcnemar, t5x2):
     t_sig = t5x2['p_value'] < SIGNIFICANCE_ALPHA
     mc_fragment = f'McNemar p={mcnemar['p_value']:.4g} ({('significant' if mc_sig else 'not significant')} at α={SIGNIFICANCE_ALPHA})'
     t_fragment = f'5x2cv paired t-test p={t5x2['p_value']:.4g} ({('significant' if t_sig else 'not significant')} at α={SIGNIFICANCE_ALPHA})'
+    # The honest tie-break: a claim only counts if BOTH the single-split and the
+    # split-robust test agree. When they don't, default to 'no reliable difference'.
     if not mc_sig and (not t_sig):
         narrative = 'Under both tests, the NN does not statistically outperform LR on F1. Honest thesis framing: on leakage-free features, a heavily regularised logistic regression is statistically indistinguishable from the MLP; the added model complexity is not justified by these data.'
     elif mc_sig and t_sig:

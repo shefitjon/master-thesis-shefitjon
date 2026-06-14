@@ -1,8 +1,9 @@
 # Analysis of Artificial Intelligence Models for Optimizing E‑Commerce Performance
 
-A four‑phase AI pipeline for shopping‑cart abandonment: it **predicts** abandonment,
-**explains** it, **generates** a personalized recovery message with a large language model,
-and **rigorously evaluates** that message.
+A four‑phase AI pipeline for shopping‑cart abandonment. A **data‑engineering** layer
+(Phase 1) builds leakage‑free session features; the pipeline then **predicts** abandonment
+(Phase 2), **explains** it with SHAP and LIME (Phase 3), and **generates** a personalized
+recovery message with a large language model, scored by a second model acting as judge (Phase 4).
 
 M.Sc. thesis — Eskişehir Osmangazi University, Graduate School of Natural and Applied
 Sciences, Department of Computer Engineering. Author: Shefitjon Bregu. Advisor:

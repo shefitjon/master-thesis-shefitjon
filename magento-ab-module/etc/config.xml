@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <cart_recovery_ab>
+            <general>
+                <enabled>0</enabled>
+                <ab_split>50</ab_split>
+                <risk_threshold>0.45</risk_threshold>
+                <intervention_source>live</intervention_source>
+                <trigger>exit_intent</trigger>
+            </general>
+        </cart_recovery_ab>
+    </default>
+</config>

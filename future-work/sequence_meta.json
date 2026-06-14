@@ -1,0 +1,18 @@
+{
+  "n_sessions_total_target": 99941,
+  "n_sessions_in_raw": 99941,
+  "n_sessions_encoded": 99941,
+  "n_sessions_no_cart_in_raw": 0,
+  "max_len": 64,
+  "time_cap_sec": 7200,
+  "n_time_buckets": 8,
+  "n_price_buckets": 8,
+  "event_type_map": {
+    "view": 1,
+    "cart": 2,
+    "purchase": 3
+  },
+  "n_categories": 14,
+  "elapsed_sec": 134.7,
+  "out_npz": "/home/user/PyCharmMiscProject/future-work/event_sequences.npz"
+}

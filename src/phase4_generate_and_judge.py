@@ -1,4 +1,14 @@
+"""
+Phase 4 — turn each explanation into a recovery message, then judge it.
+
+Two real Gemini calls per at-risk session: a GENERATOR writes the message from
+the session's LIME reason, and a JUDGE from a DIFFERENT model family scores it.
+Different families on purpose — a model over-rates its own output (self-
+preference bias, Zheng et al. 2023), so the judge must not be the generator.
+"""
 import socket as _socket
+# REES46 runs are long; force IPv4 and a socket timeout so a stalled DNS or a
+# hung connection can't freeze an overnight generation run.
 _orig_getaddrinfo = _socket.getaddrinfo
 
 def _ipv4_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
@@ -18,6 +28,7 @@ HERE = Path(__file__).resolve().parents[1] / 'artifacts'
 LIME_FILE = HERE / 'lime_examples.json'
 CAT_FILE = HERE / 'category_mapping.json'
 OUT_FILE = HERE / 'gemini_live_results.json'
+# Generator and judge are deliberately different model families.
 MODEL_GEN = 'gemini-2.5-flash-lite'
 MODEL_JUDGE = 'gemini-flash-latest'
 MAX_RETRIES = 6
@@ -25,12 +36,15 @@ BACKOFF_BASE = 8.0
 PACE_BETWEEN_CALLS = 6.5
 
 def get_client():
+    # The API key is read from the environment, never hard-coded or committed.
     key = os.environ['GEMINI_API_KEY']
     return genai.Client(api_key=key)
 
 def call_with_retry(client, model, prompt, *, temperature, max_tokens, call_label):
     for attempt in range(1, MAX_RETRIES + 1):
         try:
+            # thinking_budget=0 is the important flag: the 2.5 models otherwise
+            # spend the whole token budget on hidden reasoning and return no text.
             resp = client.models.generate_content(model=model, contents=prompt, config=types.GenerateContentConfig(temperature=temperature, max_output_tokens=max_tokens, thinking_config=types.ThinkingConfig(thinking_budget=0)))
             text = (resp.text or '').strip()
             if not text:
@@ -42,6 +56,7 @@ def call_with_retry(client, model, prompt, *, temperature, max_tokens, call_labe
             if attempt == MAX_RETRIES:
                 print(f'  [{call_label}] giving up after {attempt} attempts: {type(e).__name__} {msg[:150]}', file=sys.stderr)
                 return None
+            # Exponential backoff — free-tier quota returns a lot of 429s.
             sleep = BACKOFF_BASE * 2 ** (attempt - 1)
             reason = 'rate-limited' if is_429 else type(e).__name__
             print(f'  [{call_label}] attempt {attempt} {reason}; sleeping {sleep}s', file=sys.stderr)
@@ -49,15 +64,23 @@ def call_with_retry(client, model, prompt, *, temperature, max_tokens, call_labe
     return None
 
 def build_generator_prompt(ex, category_name, lime_reason_summary):
+    # The prompt is grounded in three things about THIS shopper: the session's
+    # own numbers, the product category, and the LIME reason from Phase 3.
+    # The explicit bans (no caps/emoji/scarcity) are why urgency scores modestly
+    # — we trade aggressive pressure for honest copy on purpose.
     raw = ex['raw_features']
     return f"You are an e-commerce cart-recovery copywriter.\n\nUSER SESSION (right at the moment they added the item to cart):\n- Category: {category_name}\n- Cart value: ${raw['initial_cart_value']:.2f}\n- Cart items: {int(raw['initial_cart_items'])}\n- Views before cart: {int(raw['views_before_cart'])}\n- Unique products viewed: {int(raw['unique_products_viewed'])}\n- Unique categories viewed: {int(raw['unique_categories_viewed'])}\n- Time to cart: {raw['time_to_cart']:.0f} seconds\n- Browse intensity: {raw['browse_intensity_pre_cart']:.2f} clicks/min\n- Avg viewed price: ${raw['avg_viewed_price']:.2f}\n- Model's predicted P(purchase): {ex['predicted_prob_purchase']:.3f}\n\nABANDONMENT RISK SIGNAL (from LIME on the predictive model):\n{lime_reason_summary}\n\nTASK: write ONE persuasive single-sentence pop-up message (max 25 words) that\n- addresses this user's specific risk signal,\n- is concrete to their category and cart,\n- creates a gentle urgency,\n- reads as natural human copy — no hashtags, no emoji, no ALL CAPS, no quotes.\n\nOutput only the single sentence, nothing else."
 JUDGE_RUBRIC = 'Score the following cart-recovery message strictly on the 1–10 scale.\n\nDimensions:\n- RELEVANCE: does it address the stated abandonment risk signal?\n- PERSONALIZATION: does it reference concrete user context (category, price, cart)?\n- URGENCY: does it include a time-bounded or scarcity element without being aggressive?\n- CLARITY: is it concise, grammatical, and actionable?\n\nReturn STRICTLY a JSON object with fields\n  relevance, personalization, urgency, clarity (all integers 1–10)\n  overall (float, the mean)\n  comment (one sentence explaining the score)\n\nNo code fences, no surrounding prose — just the JSON.'
 
 def build_judge_prompt(message, ex, category_name, lime_reason_summary):
+    # The judge sees the same context the generator saw, independently, so it
+    # scores against the real session rather than the generator's own framing.
     raw = ex['raw_features']
     return f'{JUDGE_RUBRIC}\n\nUSER CONTEXT:\n- Category: {category_name}\n- Cart value: ${raw['initial_cart_value']:.2f}\n- Views before cart: {int(raw['views_before_cart'])}\n- Time to cart: {raw['time_to_cart']:.0f} seconds\n\nABANDONMENT RISK SIGNAL:\n{lime_reason_summary}\n\nMESSAGE TO SCORE:\n{message}\n'
 
 def parse_judge_json(text):
+    # The judge is asked for raw JSON but sometimes wraps it in a code fence;
+    # strip that and pull out the first {...} block before parsing.
     t = text.strip()
     if t.startswith('```'):
         t = re.sub('^```[a-zA-Z]*\\n?', '', t)
@@ -87,6 +110,8 @@ def parse_judge_json(text):
     return out
 
 def summarise_lime(ex):
+    # Condense the session's top-3 LIME reasons into the one-line risk signal
+    # that gets dropped into the generator prompt.
     lines = []
     for r in ex['top_reasons'][:3]:
         direction = '↑ purchase' if r['weight'] > 0 else '↓ purchase'
@@ -109,6 +134,7 @@ def main():
         cat_id = int(ex['raw_features']['main_category'])
         cat_name = cat_map.get(cat_id, 'unknown')
         lime_summary = summarise_lime(ex)
+        # 1) Build the prompt from this session + its LIME reason, then generate.
         gen_prompt = build_generator_prompt(ex, cat_name, lime_summary)
         time.sleep(PACE_BETWEEN_CALLS)
         message = call_with_retry(client, MODEL_GEN, gen_prompt, temperature=0.7, max_tokens=80, call_label=f'gen {i}/{len(examples)}')
@@ -117,6 +143,7 @@ def main():
             failures['generator'] += 1
             results.append({'test_row_index': ex['test_row_index'], 'cohort': ex['cohort'], 'category': cat_name, 'lime_summary': lime_summary, 'intervention': None, 'judge': None, 'error': 'generator_failed'})
             continue
+        # 2) Hand the message to the other family at low temperature for a stable score.
         judge_prompt = build_judge_prompt(message, ex, cat_name, lime_summary)
         time.sleep(PACE_BETWEEN_CALLS)
         judge_text = call_with_retry(client, MODEL_JUDGE, judge_prompt, temperature=0.1, max_tokens=400, call_label=f'judge {i}/{len(examples)}')

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_controller_product_view">
+        <observer name="bregu_cartrecoveryab_track_product_view"
+                  instance="Bregu\CartRecoveryAb\Observer\TrackProductView"/>
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="bregu_cartrecoveryab_freeze_on_cart_add"
+                  instance="Bregu\CartRecoveryAb\Observer\FreezeOnCartAdd"/>
+    </event>
+    <event name="checkout_submit_all_after">
+        <observer name="bregu_cartrecoveryab_record_conversion"
+                  instance="Bregu\CartRecoveryAb\Observer\RecordConversion"/>
+    </event>
+    <event name="hyva_config_generate_before">
+        <observer name="bregu_cartrecoveryab_register_hyva"
+                  instance="Bregu\CartRecoveryAb\Observer\RegisterModuleForHyvaConfig"/>
+    </event>
+</config>

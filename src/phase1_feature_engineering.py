@@ -1,3 +1,12 @@
+"""
+Phase 1 — feature engineering with the Temporal Shield.
+
+The whole thesis stands or falls on one rule: a feature may only use events
+that happened at or before the prediction moment (the first cart-add). Break
+that rule and you leak the future into the model — which is exactly how the
+early pipeline scored an impossible 0.997 F1. Everything below enforces the
+rule explicitly.
+"""
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -6,17 +15,27 @@ class TemporallyCorrectFeatureEngineer:
 
     def extract_features_at_prediction_point(self, session_events):
         session_events = session_events.sort_values('event_time')
+
+        # The first cart-add is our prediction moment. If the session never
+        # added anything to the cart there is nothing to predict on.
         cart_events = session_events[session_events['event_type'] == 'cart']
         if len(cart_events) == 0:
             return None
         first_cart_time = cart_events['event_time'].min()
+
+        # The Temporal Shield: keep only what the shopper had done up to that
+        # instant. Anything after first_cart_time is the future and is banned.
         events_up_to_cart = session_events[session_events['event_time'] <= first_cart_time]
         features = {}
         session_start = events_up_to_cart['event_time'].min()
         features['time_to_cart'] = (first_cart_time - session_start).total_seconds()
+
+        # Strictly before the cart-add, so the cart event itself never counts
+        # as pre-cart browsing. These three are the features the model leans on.
         pre_cart_only = events_up_to_cart[events_up_to_cart['event_time'] < first_cart_time]
         features['views_before_cart'] = len(pre_cart_only[pre_cart_only['event_type'] == 'view'])
         features['total_events_before_cart'] = len(pre_cart_only)
+        # Browse intensity = pre-cart product views per minute of browsing.
         if features['time_to_cart'] > 0:
             features['browse_intensity_pre_cart'] = features['views_before_cart'] / (features['time_to_cart'] / 60)
         else:
@@ -34,6 +53,7 @@ class TemporallyCorrectFeatureEngineer:
             features['max_viewed_price'] = 0
             features['min_viewed_price'] = 0
             features['price_variance_viewed'] = 0
+        # Cart state at the prediction moment — current contents, not final ones.
         cart_items_at_moment = events_up_to_cart[events_up_to_cart['event_type'] == 'cart']
         features['initial_cart_value'] = cart_items_at_moment['price'].sum()
         features['initial_cart_items'] = len(cart_items_at_moment)
@@ -55,11 +75,15 @@ class TemporallyCorrectFeatureEngineer:
                 features['category_focus_ratio'] = 0
         else:
             features['category_focus_ratio'] = 0
+        # The LABEL is allowed to look at the future (did they buy afterwards?)
+        # — only the FEATURES must stay behind the shield.
         full_session_events = session_events[session_events['event_time'] > first_cart_time]
         features['target_purchase'] = 1 if 'purchase' in full_session_events['event_type'].values else 0
         return features
 
     def validate_no_leakage(self, features_df):
+        # A guard rail: if any of these future-derived columns ever reappear,
+        # fail loudly rather than silently train on leaked data again.
         suspicious_features = ['events_after_cart', 'cart_removals', 'cart_removal_rate', 'final_cart_value', 'session_duration', 'total_events']
         leaked_features = [f for f in suspicious_features if f in features_df.columns]
         if leaked_features:

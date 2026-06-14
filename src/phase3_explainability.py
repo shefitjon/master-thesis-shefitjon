@@ -1,3 +1,12 @@
+"""
+Phase 3 — explain the models two ways and check they agree.
+
+SHAP is the global lens (game-theory credit per feature) and runs on LR and RF;
+LIME is the local lens (perturb one session, fit a simple model around it) and
+runs on the NN. The payoff is convergence: when three lenses on three models all
+point at the same pre-cart browsing features, the finding is trustworthy. The
+LIME reasons here are also what Phase 4 feeds to Gemini.
+"""
 import json
 import pickle
 import warnings
@@ -24,6 +33,8 @@ def reload_dataset():
     return (X, y, feature_names, cat_encoder)
 
 def shap_linear(pipe_lr, X_train_raw, X_test_raw, feature_names):
+    # Explain in the SAME scaled space the model trained in, so the SHAP values
+    # line up with the coefficients. 1000 train rows are the background baseline.
     scaler = pipe_lr.named_steps['scaler']
     clf = pipe_lr.named_steps['clf']
     X_tr_scaled = scaler.transform(X_train_raw)
@@ -41,6 +52,7 @@ def shap_tree(pipe_rf, X_test_raw, feature_names):
     X_te_scaled = scaler.transform(X_test_raw)
     explainer = shap.TreeExplainer(clf)
     shap_values = explainer(X_te_scaled)
+    # TreeExplainer returns both classes for a forest; keep the purchase class.
     if hasattr(shap_values, 'values') and shap_values.values.ndim == 3:
         shap_values = shap.Explanation(values=shap_values.values[..., 1], base_values=shap_values.base_values[..., 1], data=shap_values.data, feature_names=feature_names)
     else:
@@ -59,6 +71,7 @@ def save_shap_plot(shap_values, out_path, title):
     plt.close()
 
 def top_mean_abs(shap_values, feature_names, k=20):
+    # Global ranking = average absolute SHAP value per feature across all sessions.
     mean_abs = np.abs(shap_values.values).mean(axis=0)
     order = np.argsort(mean_abs)[::-1]
     return [{'feature': feature_names[i], 'mean_abs_shap': float(mean_abs[i])} for i in order[:k]]
@@ -71,6 +84,8 @@ def lime_on_nn(nn_model, nn_scaler, X_train_raw, X_test_raw, y_test, feature_nam
         p1 = nn_model.predict(scaled_X, verbose=0).ravel()
         p0 = 1.0 - p1
         return np.vstack([p0, p1]).T
+    # Explain the model's most CONFIDENT correct calls in each direction, so the
+    # reasons describe clear abandoners and clear purchasers, not borderline cases.
     test_probs_1 = nn_predict_proba(X_te_scaled)[:, 1]
     tn_mask = (y_test == 0) & (test_probs_1 < 0.45)
     tp_mask = (y_test == 1) & (test_probs_1 >= 0.45)
@@ -86,12 +101,17 @@ def lime_on_nn(nn_model, nn_scaler, X_train_raw, X_test_raw, y_test, feature_nam
     examples = []
     for cohort, pick in [('high_conf_abandon', abandon_pick), ('high_conf_purchase', purchase_pick)]:
         for local_idx in pick:
+            # LIME perturbs this one row 2000 times and fits a local linear model
+            # to read off which features pushed the prediction which way.
             exp = explainer.explain_instance(data_row=X_te_scaled[local_idx], predict_fn=nn_predict_proba, num_features=5, num_samples=2000)
             reasons = [{'feature_condition': f, 'weight': float(w)} for f, w in exp.as_list()]
             examples.append({'cohort': cohort, 'test_row_index': int(local_idx), 'actual': int(y_test[local_idx]), 'predicted_prob_purchase': float(test_probs_1[local_idx]), 'top_reasons': reasons, 'raw_features': {feature_names[j]: float(X_test_raw[local_idx, j]) for j in range(len(feature_names))}})
     return examples
 
 def _canonical_reason_category(feature_name: str) -> str:
+    # Group raw feature names into human categories. 'browse_indecision' is the
+    # browse-behaviour bucket — how the shopper browsed, not what they bought.
+    # This is the bucket that ends up at 85% of the top-3 LIME reasons.
     n = feature_name.lower()
     if any((k in n for k in ('price', 'value'))):
         return 'price_hesitation'
@@ -109,6 +129,8 @@ def categorise_lime(examples):
         top = ex['top_reasons'][0]
         cond = top['feature_condition']
         import re
+        # LIME conditions read like '0.50 < views_before_cart <= 2.00'; pull the
+        # feature token (the longest identifier) back out to categorise it.
         toks = re.findall('[a-zA-Z_][a-zA-Z_0-9]+', cond)
         feat = max(toks, key=len) if toks else cond
         category = _canonical_reason_category(feat)
@@ -120,6 +142,8 @@ def main():
     print('Extracting SHAP (LR, RF) and LIME (NN) explanations')
     print('=' * 72)
     X, y, feature_names, _ = reload_dataset()
+    # Reuse the exact 80/20 split from Phase 2 so explanations describe the same
+    # held-out sessions every other phase reports on.
     idx = json.loads((HERE / 'holdout_indices.json').read_text())
     idx_tr = np.array(idx['train_indices'])
     idx_te = np.array(idx['test_indices'])

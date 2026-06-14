@@ -1,0 +1,93 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Bregu\CartRecoveryAb\ViewModel\RecoveryWidget $viewModel */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
+
+$viewModel = $block->getViewModel();
+if (!$viewModel->isActive()) {
+    return;
+}
+
+$payload = $viewModel->getClientConfigJson();
+
+$script = <<<'JS'
+function initCartRecovery() {
+    return {
+        config: {},
+        shown: false,
+        dismissed: false,
+        init() {
+            this.config = JSON.parse(this.$el.dataset.recovery || '{}');
+            this.beacon('exposure');
+            if (!this.config.hasBanner) {
+                return;
+            }
+            const trigger = this.config.trigger;
+            if (trigger === 'on_load') {
+                this.reveal();
+            } else if (trigger === 'idle') {
+                window.setTimeout(() => this.reveal(), (this.config.idleSeconds || 15) * 1000);
+            } else {
+                document.addEventListener('mouseleave', (event) => {
+                    if (event.clientY <= 0) {
+                        this.reveal();
+                    }
+                });
+            }
+        },
+        reveal() {
+            if (this.shown || this.dismissed) {
+                return;
+            }
+            this.shown = true;
+            this.beacon('impression');
+        },
+        dismiss() {
+            this.dismissed = true;
+            this.shown = false;
+            this.beacon('dismiss');
+        },
+        beacon(eventType) {
+            const body = new FormData();
+            body.append('session_key', this.config.sessionKey || '');
+            body.append('bucket', this.config.bucket || '');
+            body.append('risk', this.config.risk != null ? this.config.risk : '');
+            body.append('signal', this.config.signal || '');
+            body.append('event', eventType);
+            body.append('form_key', this.config.formKey || '');
+            if (window.navigator && window.navigator.sendBeacon) {
+                window.navigator.sendBeacon(this.config.trackUrl, body);
+            } else {
+                window.fetch(this.config.trackUrl, { method: 'POST', body: body, keepalive: true });
+            }
+        }
+    };
+}
+JS;
+?>
+<?= /* @noEscape */ $secureRenderer->renderTag('script', [], $script, false) ?>
+<div
+    x-data="initCartRecovery()"
+    data-recovery="<?= $escaper->escapeHtmlAttr($payload) ?>"
+    @keydown.escape.window="dismiss()"
+>
+<?php if ($viewModel->shouldShowBanner()): ?>
+    <div
+        x-show="shown"
+        x-cloak
+        x-transition
+        role="dialog"
+        aria-live="polite"
+        class="fixed bottom-4 right-4 z-50 max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow-lg"
+    >
+        <button
+            type="button"
+            x-on:click="dismiss()"
+            aria-label="<?= $escaper->escapeHtmlAttr(__('Dismiss')) ?>"
+            class="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+        >&times;</button>
+        <p class="pr-4 text-sm text-gray-800"><?= $escaper->escapeHtml($viewModel->getMessage()) ?></p>
+    </div>
+<?php endif; ?>
+</div>
