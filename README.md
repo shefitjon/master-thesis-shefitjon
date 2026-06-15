@@ -32,7 +32,8 @@ a headline accuracy number. See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for
 ```
 master-thesis-shefitjon/
 ├── src/
-│   ├── phase1_feature_engineering.py   # builds leakage-free session features (temporal shield)
+│   ├── phase1_data_engineering.py      # full ETL: raw events -> engineered CSV (chunked, 70/30, shield)
+│   ├── phase1_feature_engineering.py   # focused, runnable demo of the temporal-shield logic
 │   ├── phase2_train.py                 # LR / RF / NN with SMOTE inside each CV fold
 │   ├── phase3_explainability.py        # SHAP (LR, RF) + LIME (NN)
 │   ├── phase3_significance.py          # McNemar + Dietterich 5x2cv (NN vs LR)
@@ -41,14 +42,15 @@ master-thesis-shefitjon/
 │   ├── live_demo.py                    # runs the real model in ~2 s (English / Turkish)
 │   └── README.md
 ├── data/
-│   └── engineered_sessions_no_leakage.csv   # 99,941 sessions, 20 leakage-free features
+│   ├── engineered_sessions_no_leakage.csv   # 99,941 sessions, 20 leakage-free features
+│   └── 2019-Oct.csv                          # raw REES46 events — NOT in git, download separately
 ├── artifacts/                          # fitted LR model + the JSON results (so you can
 │                                       #   inspect outputs and run the demo without re-training)
 └── docs/METHODOLOGY.md                 # the four phases and the leakage correction in prose
 ```
 
-The code has no inline comments by design — every file is documented here and in
-`docs/METHODOLOGY.md`.
+The code carries short, human-written comments on the tricky lines; the broader
+rationale lives here and in `docs/METHODOLOGY.md`.
 
 ## Setup
 
@@ -75,7 +77,7 @@ python demo/live_demo.py --tr     # Turkish
 Run from the repository root. Each phase reads `data/` and reads/writes `artifacts/`.
 
 ```bash
-python src/phase1_feature_engineering.py   # (data engineering — temporal shield)
+python src/phase1_data_engineering.py      # data engineering: raw 2019-Oct.csv -> engineered CSV (optional; CSV is shipped)
 python src/phase2_train.py                 # writes models + cv_corrected_results.json + indices
 python src/phase3_explainability.py        # writes SHAP / LIME outputs   (needs phase 2 first)
 python src/phase3_significance.py          # writes stat_tests_nn_vs_lr.json (needs phase 2 first)
