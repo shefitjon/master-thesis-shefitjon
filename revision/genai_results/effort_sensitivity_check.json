@@ -1,0 +1,1444 @@
+{
+  "meta": {
+    "judge_model": "claude-opus-4-7",
+    "design": "same judge, effort low vs high",
+    "n_target": 102
+  },
+  "results": [
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 84,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "The message personalizes well by referencing the 12 views and $23 furniture item and reads clearly, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 1163,
+      "overall_low": 8.5,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 8.0,
+        "clarity": 9.0,
+        "overall": 8.5,
+        "comment": "The message directly references the user's 7 views, $511 electronics cart, and adds a clear time-bound hold through tomorrow with reassuring perks."
+      },
+      "overall_high": 8.5
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 1785,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "The message personalizes with category and cart value and reads clearly, but it lacks a time-bound or scarcity element and only loosely addresses the deliberation signal implied by a long time-to-cart."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 2354,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.25,
+        "comment": "The message personalizes with cart value and category and reduces purchase risk via returns, but it lacks a time-bounded or scarcity element and only indirectly addresses the low-engagement abandonment signal."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 3622,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Strong personalization with specific cart value and view count, but lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 5008,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Addresses hesitation via financing with concrete cart context, but lacks a clear time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 5978,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Nicely acknowledges the extensive browsing behavior and references cart specifics, but lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 7493,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message personalizes well with cart value and category and reads clearly, but it lacks a time-bound or scarcity element and only loosely addresses the browsing/hesitation signal via the returns reassurance."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 8285,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.0,
+        "comment": "The message personalizes with category and cart value and reads clearly, but it barely addresses the low-engagement risk signal and lacks any time-bound or scarcity element."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 9016,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message personalizes with category and cart value and reads clearly, but it doesn't strongly address hesitation implied by the pacing signal and lacks any time-bound or scarcity element."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 9778,
+      "overall_low": 8.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 8.0,
+        "clarity": 9.0,
+        "overall": 8.25,
+        "comment": "Strong personalization referencing views and cart value with a clear, time-bounded free-shipping hold, though it only loosely addresses the browsing-events risk signal."
+      },
+      "overall_high": 8.25
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 10747,
+      "overall_low": 7.5,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 7.75,
+        "comment": "The message smartly addresses the extensive browsing signal and personalizes with cart value and category, though the 30-day hold softens urgency rather than creating a tight time-bound nudge."
+      },
+      "overall_high": 7.75
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 12340,
+      "overall_low": 5.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 5.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 5.5,
+        "comment": "Clear and mentions the electronics category with a reassuring returns policy, but lacks specific cart details, any time-bound urgency, and only loosely addresses the hesitation implied by a long time-to-cart."
+      },
+      "overall_high": 5.5
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 13267,
+      "overall_low": 7.5,
+      "judge_high": {
+        "relevance": 9.0,
+        "personalization": 9.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 8.0,
+        "comment": "Strongly addresses the high cart-value risk with tailored financing math and clear action, though it lacks an explicit time-bound or scarcity element."
+      },
+      "overall_high": 8.0
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 14346,
+      "overall_low": 7.75,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 9.0,
+        "clarity": 9.0,
+        "overall": 8.0,
+        "comment": "Well-personalized with cart value and category and includes a clear time-bound urgency, but only loosely addresses the specific low-initial-cart-items risk signal."
+      },
+      "overall_high": 8.0
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 15533,
+      "overall_low": 7.5,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 6.0,
+        "clarity": 9.0,
+        "overall": 7.5,
+        "comment": "The message personalizes with cart value and category and addresses low-cart-value hesitation via free shipping and returns, though its urgency ('today') is mild and not tied to real scarcity."
+      },
+      "overall_high": 7.5
+    },
+    {
+      "generator_model": "claude-opus-4-8",
+      "test_row_index": 16032,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "The message personalizes with exact cart value and category and is clearly written, but it lacks any time-bound or scarcity cue and only indirectly addresses the impulsive low-research abandonment signal."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 84,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "The message personalizes well by referencing the 12 views and furniture category and addresses hesitation from extensive browsing, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 1163,
+      "overall_low": 7.5,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 7.25,
+        "comment": "Strong personalization referencing views and cart value and directly addresses research-heavy hesitation, but lacks any time-bound or scarcity element."
+      },
+      "overall_high": 7.25
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 1785,
+      "overall_low": 5.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 6.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 5.5,
+        "comment": "Clear and mentions the auto category with a risk-reducing free-returns hook, but it lacks any time-bound/scarcity urgency and doesn't reference the specific cart value or hesitation signaled by the long time-to-cart."
+      },
+      "overall_high": 5.5
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 2354,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 6.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.0,
+        "comment": "The message addresses low-research hesitation with a risk-reversal (free returns) and references cart value/category, but lacks any time-bounded or scarcity element."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 3622,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Nicely references the 5 views and category with a reassuring returns hook, but lacks any time-bound or scarcity element and doesn't mention the specific cart value."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 5008,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 7.0,
+        "urgency": 6.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Concise and references cart specifics with a mild same-day urgency, but only loosely addresses the deliberation signal implied by a longer time-to-cart."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 5978,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 7.25,
+        "comment": "The message smartly addresses the extensive research signal and references specific cart details, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 7.25
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 7493,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 7.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 5.5,
+        "comment": "The message is clear and references the cart value and category, but it doesn't directly address the browsing/hesitation signal and lacks any time-bound or scarcity element."
+      },
+      "overall_high": 5.5
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 8285,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 5.75,
+        "comment": "The message clearly references cart value and category and reduces purchase risk, but it doesn't directly address the low-engagement signal and lacks any time-bound or scarcity element."
+      },
+      "overall_high": 5.75
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 9016,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "The message clearly and concisely references the cart value and category with a reassuring return policy, but it doesn't strongly address the pacing/hesitation risk signal and offers only mild urgency via 'today'."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 9778,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Strong personalization with view count and cart value plus a risk-reversal hook, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 10747,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "The message personalizes well by referencing the browsing behavior and category and is clearly written, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 12340,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "Addresses hesitation with a risk-reversal and cites concrete cart details clearly, but lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 13267,
+      "overall_low": 8.25,
+      "judge_high": {
+        "relevance": 9.0,
+        "personalization": 9.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 8.0,
+        "comment": "Directly tackles the high cart-value abandonment risk with tailored financing math and clear action, though it lacks an explicit time-bound or scarcity cue."
+      },
+      "overall_high": 8.0
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 14346,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 6.0,
+        "urgency": 8.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "The message is clear and urgent with cart value referenced, but it doesn't directly address the low initial cart items signal and lacks deeper personalization beyond price."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 15533,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "The message addresses the low cart value concern with a free shipping incentive and references specific cart details clearly, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "claude-sonnet-4-6",
+      "test_row_index": 16032,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Strong personalization with exact cart value and category and a clear financing offer, but it only indirectly addresses the impulsive low-research signal and lacks a time-bounded or scarcity element."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 84,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 7.0,
+        "urgency": 4.0,
+        "clarity": 8.0,
+        "overall": 6.25,
+        "comment": "Message references the extended browsing time and furniture category with a reassuring returns policy, but lacks a clear time-bound or scarcity element and omits the specific cart value."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 1163,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.25,
+        "comment": "The message personalizes well by referencing the 7 views and electronics category and is clear, but it lacks any real urgency or scarcity element and only loosely addresses the abandonment risk."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 1785,
+      "overall_low": 5.5,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 6.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 5.5,
+        "comment": "The message is clear and references the auto category with a helpful returns policy, but it lacks any time-bound urgency and doesn't directly address the slow time-to-cart hesitation signal."
+      },
+      "overall_high": 5.5
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 2354,
+      "overall_low": 5.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 5.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 5.25,
+        "comment": "The message addresses hesitation with a return policy and mentions the category, but lacks cart value specifics and any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 5.25
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 3622,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.0,
+        "comment": "The message personalizes well with cart value and view count and is clear, but it only weakly addresses the browsing/hesitation signal and lacks any time-bound or scarcity element."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 5008,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 6.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 5.75,
+        "comment": "Clear and references the electronics category with a reassuring returns policy, but it lacks cart value specifics, ignores the deliberation signal from long time-to-cart, and offers no real time-bound or scarcity element."
+      },
+      "overall_high": 5.75
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 5978,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 6.0,
+        "comment": "The message personalizes well with view count and cart value and is clear, but it lacks any time-bounded or scarcity element and only indirectly addresses the deliberation-based abandonment risk."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 7493,
+      "overall_low": 4.75,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 5.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 5.0,
+        "comment": "The message is clear and references the electronics category, but it lacks any urgency or scarcity element and doesn't specifically address the browsing-hesitation signal or cart value."
+      },
+      "overall_high": 5.0
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 8285,
+      "overall_low": 4.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 4.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 4.75,
+        "comment": "The message is clear and mentions the electronics category with a reassuring returns policy, but it lacks specific cart details, has no urgency or scarcity element, and only weakly addresses the low-engagement abandonment signal."
+      },
+      "overall_high": 4.75
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 9016,
+      "overall_low": 5.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 6.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 5.25,
+        "comment": "Mentions the electronics category and offers reassurance via free returns, but lacks any urgency/scarcity element and doesn't directly address the hesitation signal or reference the specific cart value."
+      },
+      "overall_high": 5.25
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 9778,
+      "overall_low": 4.0,
+      "judge_high": {
+        "relevance": 3.0,
+        "personalization": 2.0,
+        "urgency": 1.0,
+        "clarity": 7.0,
+        "overall": 3.25,
+        "comment": "The message is grammatical and reassuring about returns but ignores the browsing/abandonment signal, references no concrete cart details, and lacks any urgency or scarcity element."
+      },
+      "overall_high": 3.25
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 10747,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 6.5,
+        "comment": "The message personalizes well by referencing the 9 items viewed and the apparel category and addresses fit-related hesitation, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 12340,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 6.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.0,
+        "comment": "The message addresses hesitation from a long deliberation with a reassuring returns policy and mentions the electronics category, but it lacks cart value specifics and any time-bound or scarcity element."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 13267,
+      "overall_low": 7.75,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 7.75,
+        "comment": "Strong personalization with exact cart value and category plus a relevant financing hook for high-ticket abandonment, though it lacks a clear time-bound or scarcity element."
+      },
+      "overall_high": 7.75
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 14346,
+      "overall_low": 8.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 8.0,
+        "clarity": 9.0,
+        "overall": 7.75,
+        "comment": "The message is concise, personalized with category and cart value, and uses scarcity effectively, though it only loosely maps to the specific low-initial-cart-items risk signal."
+      },
+      "overall_high": 7.75
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 15533,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 5.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Personalizes with cart value and category and reads clearly, but the urgency is soft and the free-shipping hook only loosely addresses a low-cart-value abandonment signal."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gemini-2.5-pro",
+      "test_row_index": 16032,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 6.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message smartly addresses impulse-buy hesitation with a reassuring refund policy and references the electronics category, but it lacks concrete cart details and any time-bounded or scarcity element."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 84,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 9.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 6.0,
+        "comment": "The message personalizes well with category, views, and cart value, but lacks any urgency or scarcity element and only loosely addresses the abandonment risk."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 1163,
+      "overall_low": 5.25,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 6.0,
+        "urgency": 1.0,
+        "clarity": 8.0,
+        "overall": 4.75,
+        "comment": "The message references the cart value and electronics category and reads clearly, but it fails to address the browsing-hesitation signal and includes no time-bounded or scarcity element."
+      },
+      "overall_high": 4.75
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 1785,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 6.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 5.75,
+        "comment": "Addresses the deliberation signal with a reassuring guarantee and references the auto category, but lacks any time-bound or scarcity element and doesn't mention the specific cart value."
+      },
+      "overall_high": 5.75
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 2354,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 7.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message clearly addresses low-research hesitation with a reassuring returns policy and cites the cart value, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 3622,
+      "overall_low": 5.25,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 7.0,
+        "urgency": 1.0,
+        "clarity": 8.0,
+        "overall": 5.0,
+        "comment": "The message references the category and cart value but ignores the browsing-behavior risk signal and lacks any time-bound or scarcity element."
+      },
+      "overall_high": 5.0
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 5008,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 5.5,
+        "comment": "The message references the category and cart value clearly, but it lacks any time-bounded or scarcity element and doesn't directly address hesitation implied by the time-to-cart signal."
+      },
+      "overall_high": 5.5
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 5978,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "Strong personalization with specific cart details and addresses the extended research behavior, but lacks any time-bounded or scarcity element to drive urgency."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 7493,
+      "overall_low": 5.5,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 7.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 5.25,
+        "comment": "The message references the category and cart value clearly but ignores the browsing/engagement risk signal and lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 5.25
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 8285,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 7.0,
+        "urgency": 2.0,
+        "clarity": 8.0,
+        "overall": 5.25,
+        "comment": "The message personalizes with cart value and category and is clearly written, but it misrepresents the browsing signal (three views, not categories), lacks any time-bound or scarcity element, and only weakly addresses the low-engagement abandonment risk."
+      },
+      "overall_high": 5.25
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 9016,
+      "overall_low": 5.5,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 5.75,
+        "comment": "Mentions cart value and category with clear phrasing, but lacks a time-bound or scarcity element and only weakly addresses hesitation implied by the pacing signal."
+      },
+      "overall_high": 5.75
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 9778,
+      "overall_low": 4.75,
+      "judge_high": {
+        "relevance": 4.0,
+        "personalization": 5.0,
+        "urgency": 1.0,
+        "clarity": 8.0,
+        "overall": 4.5,
+        "comment": "The message references the cart value and reassures with free returns, but it lacks urgency, ignores category context, and only loosely addresses the abandonment risk signal."
+      },
+      "overall_high": 4.5
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 10747,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 6.0,
+        "comment": "The message personalizes well with cart value and category and reads clearly, but it lacks any urgency or scarcity cue and only loosely addresses the abandonment risk via a returns reassurance."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 12340,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message personalizes with cart value and category and is clearly written, but it barely addresses the slow decision-making risk signal and lacks a time-bounded or scarcity element to drive urgency."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 13267,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Directly addresses high-cart-value abandonment risk with personalized cart amount and category and clear financing offer, but lacks any time-bound or scarcity element."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 14346,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 6.0,
+        "urgency": 8.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "The message is clear and urgent with cart value referenced, but it doesn't clearly address the low initial cart items signal and personalization is generic beyond price."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 15533,
+      "overall_low": 5.5,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 5.75,
+        "comment": "The message references cart specifics well and reads clearly, but it lacks a time-bound or scarcity element and only weakly addresses the low-cart-value abandonment risk."
+      },
+      "overall_high": 5.75
+    },
+    {
+      "generator_model": "gemini-flash-lite",
+      "test_row_index": 16032,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 7.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message addresses impulse-buy hesitation with a reassurance angle and references cart value/category clearly, but it lacks any time-bound or scarcity element."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 84,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.5,
+        "comment": "The message personalizes well with specific view counts, cart value, and category, and reads clearly, but it lacks a time-bounded or scarcity element and only loosely addresses the browsing-hesitation risk signal."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 1163,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.75,
+        "comment": "The message personalizes well with cart value and view count and reads clearly, but it lacks any real time-bound or scarcity element and only loosely addresses the deliberation-based abandonment signal."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 1785,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.5,
+        "comment": "Strong personalization with specific cart details, but lacks a clear time-bound or scarcity element and only loosely addresses the deliberation-time risk signal."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 2354,
+      "overall_low": 6.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 7.0,
+        "overall": 6.0,
+        "comment": "Addresses low-research hesitation with a reassuring returns policy and references concrete cart details, but lacks any time-bound or scarcity element and has a minor grammatical slip ('an $174.34')."
+      },
+      "overall_high": 6.0
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 3622,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.25,
+        "comment": "Strong personalization with specific cart details and view count, but lacks any time-bound urgency or scarcity element and only loosely addresses the abandonment risk."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 5008,
+      "overall_low": 5.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 5.0,
+        "overall": 5.25,
+        "comment": "Message references concrete cart details but awkwardly phrased, lacks a clear time-bound urgency element, and only loosely addresses the hesitation signaled by time-to-cart."
+      },
+      "overall_high": 5.25
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 5978,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 8.0,
+        "overall": 6.75,
+        "comment": "The message personalizes well with cart value, category, views, and time, but lacks a clear time-bound urgency element and only loosely addresses the browsing-hesitation risk signal."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 7493,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "The message personalizes well with cart value, views, and timing, and reads clearly, but it lacks a strong time-bound or scarcity hook and only loosely addresses the browsing-events risk signal."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 8285,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.5,
+        "comment": "Strong personalization with specific cart details but lacks a clear time-bound or scarcity element and only loosely addresses the low-engagement abandonment signal."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 9016,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 8.0,
+        "overall": 6.75,
+        "comment": "Strong personalization with concrete cart details and clear phrasing, but it lacks a real time-bound or scarcity hook and only loosely addresses the pacing-based abandonment signal."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 9778,
+      "overall_low": 5.75,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 7.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 5.75,
+        "comment": "The message personalizes with cart value and view count and is clear, but it lacks a time-bound or scarcity element and only loosely addresses the browsing-hesitation signal."
+      },
+      "overall_high": 5.75
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 10747,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.5,
+        "comment": "Strong personalization with specific cart details and clear phrasing, but it lacks a time-bound or scarcity element and only loosely addresses the browsing-heavy abandonment signal via a returns reassurance."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 12340,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 8.0,
+        "overall": 7.0,
+        "comment": "Strong personalization with specific cart details and decent clarity, but urgency is weak (returns policy isn't time-bound) and relevance to the extended deliberation signal could be more direct."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 13267,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 7.0,
+        "comment": "Strong personalization with cart value and view count and directly addresses the high-cart-value abandonment risk via financing, but lacks any time-bound or scarcity element."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 14346,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 5.0,
+        "personalization": 8.0,
+        "urgency": 7.0,
+        "clarity": 5.0,
+        "overall": 6.25,
+        "comment": "Mentions cart value and views but reads awkwardly and doesn't clearly address the low-initial-cart-items risk signal."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 15533,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 5.0,
+        "clarity": 8.0,
+        "overall": 7.25,
+        "comment": "Addresses low cart value with a free shipping incentive and cites concrete cart details, but the urgency cue is soft and lacks a clear time-bound or scarcity element."
+      },
+      "overall_high": 7.25
+    },
+    {
+      "generator_model": "gpt-5.4",
+      "test_row_index": 16032,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.75,
+        "comment": "Strong personalization with specific cart details and addresses the low-consideration signal via reassurance, but lacks any time-bound or scarcity element for urgency."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 84,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "Strong personalization and clarity with concrete cart details, but lacks a time-bound or scarcity element and only loosely addresses the browsing-heavy abandonment signal."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 1163,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.25,
+        "comment": "The message personalizes well with views, cart value, and category and reads clearly, but it lacks a time-bounded or scarcity element and only loosely addresses the high-deliberation risk signal."
+      },
+      "overall_high": 7.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 1785,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.25,
+        "comment": "The message personalizes well with cart details and is clear, but lacks a time-bound or scarcity element and only loosely addresses the deliberation-time abandonment signal."
+      },
+      "overall_high": 7.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 2354,
+      "overall_low": 8.25,
+      "judge_high": {
+        "relevance": 8.0,
+        "personalization": 9.0,
+        "urgency": 7.0,
+        "clarity": 9.0,
+        "overall": 8.25,
+        "comment": "The message effectively references the low pre-cart activity, cart value, and category, with a soft urgency cue via today's price and clear returns policy."
+      },
+      "overall_high": 8.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 3622,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "Strong personalization and clarity with cart specifics, but urgency is minimal and the risk signal about high pre-cart activity is only loosely addressed."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 5008,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.75,
+        "comment": "Strong personalization with concrete cart value and deliberation time, but it lacks a time-bound or scarcity element and only indirectly addresses the hesitation signal via a returns reassurance."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 5978,
+      "overall_low": 7.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.25,
+        "comment": "The message personalizes well with views, cart value, and category, and reads cleanly, but it lacks a clear time-bounded or scarcity element and only loosely addresses the deliberation-based abandonment risk."
+      },
+      "overall_high": 7.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 7493,
+      "overall_low": 6.75,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.75,
+        "comment": "Highly personalized and clear with cart specifics, but lacks a time-bound or scarcity element and only loosely addresses the browsing-activity risk signal."
+      },
+      "overall_high": 6.75
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 8285,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.5,
+        "comment": "Strong personalization with cart value and view count, but lacks a time-bound or scarcity element and only indirectly addresses the low-engagement abandonment signal via a returns reassurance."
+      },
+      "overall_high": 6.5
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 9016,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 2.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "Clear and personalized with cart value and category plus a reassuring returns policy, but it lacks any urgency or scarcity cue and only loosely addresses the hesitation signal."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 9778,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 7.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 6.25,
+        "comment": "The message clearly references the user's view count and cart value with concise phrasing, but it lacks any time-bound or scarcity element and only loosely addresses the abandonment signal."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 10747,
+      "overall_low": 7.0,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 3.0,
+        "clarity": 9.0,
+        "overall": 7.0,
+        "comment": "Strong personalization referencing views, category, and cart value with clear phrasing, but lacks a time-bound or scarcity element and only loosely addresses the extended browsing/comparison risk signal."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 12340,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 8.0,
+        "overall": 7.0,
+        "comment": "Strong personalization with specific cart details and decent clarity, but urgency is weak with no time-bound or scarcity element, and it only partially addresses the deliberation signal implied by long time-to-cart."
+      },
+      "overall_high": 7.0
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 13267,
+      "overall_low": 7.75,
+      "judge_high": {
+        "relevance": 9.0,
+        "personalization": 9.0,
+        "urgency": 4.0,
+        "clarity": 9.0,
+        "overall": 7.75,
+        "comment": "Directly addresses high-cart-value abandonment with specific price and financing math, but lacks any time-bound or scarcity element."
+      },
+      "overall_high": 7.75
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 14346,
+      "overall_low": 8.0,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 9.0,
+        "clarity": 9.0,
+        "overall": 8.0,
+        "comment": "The message personalizes with category and price and adds a clear, non-aggressive time limit, but it only loosely addresses the low-initial-cart-items risk signal."
+      },
+      "overall_high": 8.0
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 15533,
+      "overall_low": 6.5,
+      "judge_high": {
+        "relevance": 6.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.25,
+        "comment": "The message personalizes with cart value and category and addresses low-value hesitation via free shipping, but lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.25
+    },
+    {
+      "generator_model": "gpt-5.5",
+      "test_row_index": 16032,
+      "overall_low": 6.25,
+      "judge_high": {
+        "relevance": 7.0,
+        "personalization": 8.0,
+        "urgency": 3.0,
+        "clarity": 8.0,
+        "overall": 6.5,
+        "comment": "The message references the cart value, category, and low browsing activity with clear reassurance, but it lacks any time-bound or scarcity element to drive urgency."
+      },
+      "overall_high": 6.5
+    }
+  ],
+  "statistics": {
+    "n": 102,
+    "pearson_r": 0.96,
+    "mean_abs_diff": 0.167,
+    "mean_low": 6.473,
+    "mean_high": 6.483
+  }
+}

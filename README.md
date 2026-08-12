@@ -46,8 +46,17 @@ master-thesis-shefitjon/
 │   └── 2019-Oct.csv                          # raw REES46 events — NOT in git, download separately
 ├── artifacts/                          # fitted LR model + the JSON results (so you can
 │                                       #   inspect outputs and run the demo without re-training)
+├── revision/
+│   ├── statistics/                     # all-pairs McNemar + 5x2cv + Holm + bootstrap CIs (build_tables.py)
+│   ├── figures/                        # figures regenerated from the fitted models (Turkish labels)
+│   ├── tables/                         # model comparison / significance / literature tables
+│   └── genai_results/                  # cross-provider judge matrix + Experiment 2 (frozen protocol)
 └── docs/METHODOLOGY.md                 # the four phases and the leakage correction in prose
 ```
+
+The `revision/` folder holds the post-defense work: every statistical claim in
+the revised thesis traces to a JSON or CSV in there, and the figures are the
+exact ones embedded in the revised PDF.
 
 The code carries short, human-written comments on the tricky lines; the broader
 rationale lives here and in `docs/METHODOLOGY.md`.

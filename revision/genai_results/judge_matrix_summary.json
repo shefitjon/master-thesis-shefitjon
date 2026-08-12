@@ -1,0 +1,129 @@
+{
+  "generators": [
+    "claude-opus-4-8",
+    "claude-sonnet-4-6",
+    "gemini-2.5-pro",
+    "gemini-flash-lite",
+    "gpt-5.4",
+    "gpt-5.5"
+  ],
+  "judges": [
+    "claude-opus-4-7",
+    "gpt-5.4-mini"
+  ],
+  "overall_grid": {
+    "claude-opus-4-8": {
+      "claude-opus-4-7": 6.868,
+      "gpt-5.4-mini": 6.777
+    },
+    "claude-sonnet-4-6": {
+      "claude-opus-4-7": 6.78,
+      "gpt-5.4-mini": 7.01
+    },
+    "gemini-2.5-pro": {
+      "claude-opus-4-7": 5.967,
+      "gpt-5.4-mini": 5.823
+    },
+    "gemini-flash-lite": {
+      "claude-opus-4-7": 5.915,
+      "gpt-5.4-mini": 6.277
+    },
+    "gpt-5.4": {
+      "claude-opus-4-7": 6.73,
+      "gpt-5.4-mini": 7.122
+    },
+    "gpt-5.5": {
+      "claude-opus-4-7": 6.995,
+      "gpt-5.4-mini": 6.99
+    }
+  },
+  "self_family_overall_mean": 6.94,
+  "cross_family_overall_mean": 6.437,
+  "self_vs_cross_gap": 0.503,
+  "per_cell_all_dims": {
+    "claude-opus-4-8 || claude-opus-4-7": {
+      "relevance": 6.547,
+      "personalization": 8.067,
+      "urgency": 3.92,
+      "clarity": 8.94,
+      "overall": 6.868
+    },
+    "claude-opus-4-8 || gpt-5.4-mini": {
+      "relevance": 7.687,
+      "personalization": 8.193,
+      "urgency": 2.293,
+      "clarity": 8.933,
+      "overall": 6.777
+    },
+    "claude-sonnet-4-6 || claude-opus-4-7": {
+      "relevance": 6.307,
+      "personalization": 7.953,
+      "urgency": 4.02,
+      "clarity": 8.84,
+      "overall": 6.78
+    },
+    "claude-sonnet-4-6 || gpt-5.4-mini": {
+      "relevance": 7.62,
+      "personalization": 8.307,
+      "urgency": 3.16,
+      "clarity": 8.953,
+      "overall": 7.01
+    },
+    "gemini-2.5-pro || claude-opus-4-7": {
+      "relevance": 5.893,
+      "personalization": 6.6,
+      "urgency": 2.993,
+      "clarity": 8.38,
+      "overall": 5.967
+    },
+    "gemini-2.5-pro || gpt-5.4-mini": {
+      "relevance": 6.633,
+      "personalization": 6.04,
+      "urgency": 1.947,
+      "clarity": 8.673,
+      "overall": 5.823
+    },
+    "gemini-flash-lite || claude-opus-4-7": {
+      "relevance": 5.4,
+      "personalization": 7.173,
+      "urgency": 2.827,
+      "clarity": 8.26,
+      "overall": 5.915
+    },
+    "gemini-flash-lite || gpt-5.4-mini": {
+      "relevance": 6.747,
+      "personalization": 7.64,
+      "urgency": 1.953,
+      "clarity": 8.767,
+      "overall": 6.277
+    },
+    "gpt-5.4 || claude-opus-4-7": {
+      "relevance": 6.433,
+      "personalization": 8.813,
+      "urgency": 3.88,
+      "clarity": 7.793,
+      "overall": 6.73
+    },
+    "gpt-5.4 || gpt-5.4-mini": {
+      "relevance": 8.0,
+      "personalization": 9.14,
+      "urgency": 2.5,
+      "clarity": 8.847,
+      "overall": 7.122
+    },
+    "gpt-5.5 || claude-opus-4-7": {
+      "relevance": 6.773,
+      "personalization": 8.747,
+      "urgency": 3.833,
+      "clarity": 8.627,
+      "overall": 6.995
+    },
+    "gpt-5.5 || gpt-5.4-mini": {
+      "relevance": 7.9,
+      "personalization": 8.807,
+      "urgency": 2.313,
+      "clarity": 8.94,
+      "overall": 6.99
+    }
+  }
+}

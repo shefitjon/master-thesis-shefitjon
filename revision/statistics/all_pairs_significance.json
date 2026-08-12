@@ -1,0 +1,421 @@
+{
+  "seed": 42,
+  "n_test": 19989,
+  "nn_threshold": 0.45,
+  "bootstrap_B": 2000,
+  "tost_margins": [
+    0.01,
+    0.02,
+    0.05
+  ],
+  "mcnemar_all_pairs": {
+    "LR_vs_NN": {
+      "b": 1540,
+      "c": 1718,
+      "n_discordant": 3258,
+      "p_value": 0.0019244192075605782
+    },
+    "LR_vs_RF": {
+      "b": 1813,
+      "c": 3394,
+      "n_discordant": 5207,
+      "p_value": 6.22216260994625e-108
+    },
+    "NN_vs_RF": {
+      "b": 1483,
+      "c": 2886,
+      "n_discordant": 4369,
+      "p_value": 1.350666259914785e-101
+    }
+  },
+  "five_by_two_cv_all_pairs": {
+    "LR_vs_NN": {
+      "mean_delta_a_minus_b": -0.0013,
+      "t_statistic": 0.3026,
+      "df": 5,
+      "p_value": 0.7744,
+      "significant_alpha0.05": false,
+      "equivalent_TOST_alpha0.05": {
+        "margin_0.01": false,
+        "margin_0.02": true,
+        "margin_0.05": true
+      },
+      "per_iter_deltas": [
+        {
+          "p1": 0.0017,
+          "p2": 0.0175
+        },
+        {
+          "p1": -0.0092,
+          "p2": -0.0069
+        },
+        {
+          "p1": -0.0018,
+          "p2": -0.0081
+        },
+        {
+          "p1": -0.0028,
+          "p2": -0.0048
+        },
+        {
+          "p1": 0.0031,
+          "p2": -0.0021
+        }
+      ]
+    },
+    "LR_vs_RF": {
+      "mean_delta_a_minus_b": 0.0349,
+      "t_statistic": 5.8477,
+      "df": 5,
+      "p_value": 0.0021,
+      "significant_alpha0.05": true,
+      "equivalent_TOST_alpha0.05": {
+        "margin_0.01": false,
+        "margin_0.02": false,
+        "margin_0.05": false
+      },
+      "per_iter_deltas": [
+        {
+          "p1": 0.045,
+          "p2": 0.0257
+        },
+        {
+          "p1": 0.0434,
+          "p2": 0.0337
+        },
+        {
+          "p1": 0.0314,
+          "p2": 0.0351
+        },
+        {
+          "p1": 0.0417,
+          "p2": 0.0319
+        },
+        {
+          "p1": 0.0327,
+          "p2": 0.0287
+        }
+      ]
+    },
+    "NN_vs_RF": {
+      "mean_delta_a_minus_b": 0.0363,
+      "t_statistic": 3.4909,
+      "df": 5,
+      "p_value": 0.0175,
+      "significant_alpha0.05": true,
+      "equivalent_TOST_alpha0.05": {
+        "margin_0.01": false,
+        "margin_0.02": false,
+        "margin_0.05": false
+      },
+      "per_iter_deltas": [
+        {
+          "p1": 0.0433,
+          "p2": 0.0082
+        },
+        {
+          "p1": 0.0526,
+          "p2": 0.0406
+        },
+        {
+          "p1": 0.0332,
+          "p2": 0.0431
+        },
+        {
+          "p1": 0.0445,
+          "p2": 0.0367
+        },
+        {
+          "p1": 0.0296,
+          "p2": 0.0309
+        }
+      ]
+    }
+  },
+  "five_by_two_cv_fold_mean_f1": {
+    "LR": 0.4673,
+    "RF": 0.4323,
+    "NN": 0.4686
+  },
+  "bootstrap_metric_ci95": {
+    "LogisticRegression": {
+      "f1": {
+        "point": 0.4674,
+        "ci95": [
+          0.4583,
+          0.4766
+        ]
+      },
+      "precision": {
+        "point": 0.3673,
+        "ci95": [
+          0.3582,
+          0.3764
+        ]
+      },
+      "recall": {
+        "point": 0.6426,
+        "ci95": [
+          0.6308,
+          0.6548
+        ]
+      },
+      "roc_auc": {
+        "point": 0.6177,
+        "ci95": [
+          0.6088,
+          0.6264
+        ]
+      }
+    },
+    "RandomForest": {
+      "f1": {
+        "point": 0.4375,
+        "ci95": [
+          0.4269,
+          0.4476
+        ]
+      },
+      "precision": {
+        "point": 0.4106,
+        "ci95": [
+          0.3986,
+          0.4221
+        ]
+      },
+      "recall": {
+        "point": 0.4682,
+        "ci95": [
+          0.4555,
+          0.4807
+        ]
+      },
+      "roc_auc": {
+        "point": 0.6206,
+        "ci95": [
+          0.612,
+          0.629
+        ]
+      }
+    },
+    "NeuralNetwork": {
+      "f1": {
+        "point": 0.4811,
+        "ci95": [
+          0.4715,
+          0.4899
+        ]
+      },
+      "precision": {
+        "point": 0.3768,
+        "ci95": [
+          0.3674,
+          0.3856
+        ]
+      },
+      "recall": {
+        "point": 0.6652,
+        "ci95": [
+          0.6531,
+          0.6771
+        ]
+      },
+      "roc_auc": {
+        "point": 0.6339,
+        "ci95": [
+          0.6253,
+          0.6421
+        ]
+      }
+    }
+  },
+  "equivalence_bootstrap_TOST": {
+    "LR_vs_NN": {
+      "f1_diff_point": -0.0136,
+      "ci90_diff": [
+        -0.0185,
+        -0.0087
+      ],
+      "ci95_diff": [
+        -0.0194,
+        -0.0079
+      ],
+      "equivalent_within_margin_TOST_alpha0.05": {
+        "margin_0.01": false,
+        "margin_0.02": true,
+        "margin_0.05": true
+      }
+    },
+    "LR_vs_RF": {
+      "f1_diff_point": 0.0299,
+      "ci90_diff": [
+        0.0228,
+        0.0377
+      ],
+      "ci95_diff": [
+        0.0216,
+        0.0391
+      ],
+      "equivalent_within_margin_TOST_alpha0.05": {
+        "margin_0.01": false,
+        "margin_0.02": false,
+        "margin_0.05": true
+      }
+    },
+    "NN_vs_RF": {
+      "f1_diff_point": 0.0436,
+      "ci90_diff": [
+        0.0367,
+        0.0505
+      ],
+      "ci95_diff": [
+        0.0356,
+        0.0518
+      ],
+      "equivalent_within_margin_TOST_alpha0.05": {
+        "margin_0.01": false,
+        "margin_0.02": false,
+        "margin_0.05": false
+      }
+    }
+  },
+  "confusion_matrices": {
+    "LogisticRegression": [
+      [
+        7196,
+        6721
+      ],
+      [
+        2170,
+        3902
+      ]
+    ],
+    "RandomForest": [
+      [
+        9836,
+        4081
+      ],
+      [
+        3229,
+        2843
+      ]
+    ],
+    "NeuralNetwork": [
+      [
+        7237,
+        6680
+      ],
+      [
+        2033,
+        4039
+      ]
+    ]
+  },
+  "per_class_metrics": {
+    "LogisticRegression": {
+      "abandon_recall": 0.5171,
+      "abandon_precision": 0.7683,
+      "purchase_recall": 0.6426,
+      "purchase_precision": 0.3673,
+      "accuracy": 0.5552,
+      "counts": {
+        "TN_abandon_correct": 7196,
+        "FP": 6721,
+        "FN": 2170,
+        "TP_purchase_correct": 3902
+      }
+    },
+    "RandomForest": {
+      "abandon_recall": 0.7068,
+      "abandon_precision": 0.7529,
+      "purchase_recall": 0.4682,
+      "purchase_precision": 0.4106,
+      "accuracy": 0.6343,
+      "counts": {
+        "TN_abandon_correct": 9836,
+        "FP": 4081,
+        "FN": 3229,
+        "TP_purchase_correct": 2843
+      }
+    },
+    "NeuralNetwork": {
+      "abandon_recall": 0.52,
+      "abandon_precision": 0.7807,
+      "purchase_recall": 0.6652,
+      "purchase_precision": 0.3768,
+      "accuracy": 0.5641,
+      "counts": {
+        "TN_abandon_correct": 7237,
+        "FP": 6680,
+        "FN": 2033,
+        "TP_purchase_correct": 4039
+      }
+    }
+  },
+  "claim_reconciliation_66pct": {
+    "claim_in_thesis": "66.5% of true abandoners (Table 4.2 caption / \u00a74.2)",
+    "actual_meaning": "66.5% is the Neural Network PURCHASE-class recall (TP/(FN+TP) = 0.6652), i.e. the share of true purchasers the NN catches at threshold 0.45 \u2014 NOT abandoners.",
+    "correct_per_class_recall": {
+      "LR": {
+        "abandon_recall": 0.5171,
+        "purchase_recall": 0.6426
+      },
+      "RF": {
+        "abandon_recall": 0.7068,
+        "purchase_recall": 0.4682
+      },
+      "NN": {
+        "abandon_recall": 0.52,
+        "purchase_recall": 0.6652
+      }
+    },
+    "fix": "Restate as 'the NN recovers 66.5% of would-be purchasers (purchase recall)'. Abandon-class recall is LR 0.52 / RF 0.71 / NN 0.52."
+  },
+  "holm_correction": {
+    "note": "Holm step-down over the 3 pairwise tests (reviewer delta Q1). 5x2cv conclusions unchanged after correction.",
+    "five_by_two_cv": {
+      "LR_vs_RF": {
+        "p_raw": 0.0021,
+        "p_holm": 0.0063,
+        "significant_holm_alpha0.05": true
+      },
+      "NN_vs_RF": {
+        "p_raw": 0.0175,
+        "p_holm": 0.035,
+        "significant_holm_alpha0.05": true
+      },
+      "LR_vs_NN": {
+        "p_raw": 0.7744,
+        "p_holm": 0.7744,
+        "significant_holm_alpha0.05": false
+      }
+    },
+    "mcnemar": {
+      "LR_vs_RF": {
+        "p_raw": 6.22216260994625e-108,
+        "p_holm": 0.0,
+        "significant_holm_alpha0.05": true
+      },
+      "NN_vs_RF": {
+        "p_raw": 1.350666259914785e-101,
+        "p_holm": 0.0,
+        "significant_holm_alpha0.05": true
+      },
+      "LR_vs_NN": {
+        "p_raw": 0.0019244192075605782,
+        "p_holm": 0.001924,
+        "significant_holm_alpha0.05": true
+      }
+    }
+  },
+  "tost_margin_justification": {
+    "delta": 0.02,
+    "rationale": "0.02 F1 is (a) at or below each model's own bootstrap 95% CI width (sampling noise of a single test set), and (b) smaller than the F1 shift from a 0.05 change in the NN decision threshold; differences inside it are not actionable for model selection.",
+    "bootstrap_ci95_widths_f1": {
+      "LogisticRegression": 0.0183,
+      "RandomForest": 0.0207,
+      "NeuralNetwork": 0.0184
+    },
+    "framing_rule": "LR-NN: the CI excludes zero, so NN is statistically better; the TOST bound shows the edge is < 0.02 F1. Write 'statistically detectable but practically bounded below 0.02 F1' \u2014 never 'no difference'. Note: at delta=0.01 TOST fails, so the equivalence claim must always state its margin."
+  }
+}

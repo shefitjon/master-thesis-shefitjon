@@ -1,0 +1,217 @@
+{
+  "generators": {
+    "claude-opus-4-8": {
+      "n": 150,
+      "unique_opener_rate": 0.42,
+      "dont_miss_rate": 0.0,
+      "unique_full": 1.0
+    },
+    "claude-sonnet-4-6": {
+      "n": 150,
+      "unique_opener_rate": 0.44,
+      "dont_miss_rate": 0.0,
+      "unique_full": 1.0
+    },
+    "gemini-flash-lite": {
+      "n": 150,
+      "unique_opener_rate": 0.393,
+      "dont_miss_rate": 0.0,
+      "unique_full": 1.0
+    },
+    "gemini-2.5-pro": {
+      "n": 150,
+      "unique_opener_rate": 0.5,
+      "dont_miss_rate": 0.0,
+      "unique_full": 1.0
+    },
+    "gpt-5.4": {
+      "n": 150,
+      "unique_opener_rate": 0.087,
+      "dont_miss_rate": 0.0,
+      "unique_full": 1.0
+    },
+    "gpt-5.5": {
+      "n": 150,
+      "unique_opener_rate": 0.167,
+      "dont_miss_rate": 0.0,
+      "unique_full": 1.0
+    }
+  },
+  "generator_overall_rank": {
+    "gpt-5.5": 6.992,
+    "gpt-5.4": 6.926,
+    "claude-sonnet-4-6": 6.895,
+    "claude-opus-4-8": 6.822,
+    "gemini-flash-lite": 6.096,
+    "gemini-2.5-pro": 5.895
+  },
+  "generator_dimensions": {
+    "claude-opus-4-8": {
+      "relevance": 7.117,
+      "personalization": 8.13,
+      "urgency": 3.107,
+      "clarity": 8.937,
+      "overall": 6.822
+    },
+    "claude-sonnet-4-6": {
+      "relevance": 6.963,
+      "personalization": 8.13,
+      "urgency": 3.59,
+      "clarity": 8.897,
+      "overall": 6.895
+    },
+    "gemini-2.5-pro": {
+      "relevance": 6.263,
+      "personalization": 6.32,
+      "urgency": 2.47,
+      "clarity": 8.527,
+      "overall": 5.895
+    },
+    "gemini-flash-lite": {
+      "relevance": 6.073,
+      "personalization": 7.407,
+      "urgency": 2.39,
+      "clarity": 8.513,
+      "overall": 6.096
+    },
+    "gpt-5.4": {
+      "relevance": 7.217,
+      "personalization": 8.977,
+      "urgency": 3.19,
+      "clarity": 8.32,
+      "overall": 6.926
+    },
+    "gpt-5.5": {
+      "relevance": 7.337,
+      "personalization": 8.777,
+      "urgency": 3.073,
+      "clarity": 8.783,
+      "overall": 6.992
+    }
+  },
+  "inter_judge_agreement": {
+    "judges": [
+      "claude-opus-4-7",
+      "gpt-5.4-mini"
+    ],
+    "n_shared_items": 900,
+    "pearson_r": 0.64,
+    "mean_abs_diff": 0.545
+  },
+  "family_bias": {
+    "self_family_mean": 6.94,
+    "cross_family_mean": 6.437,
+    "self_minus_cross": 0.503,
+    "n_self": 600,
+    "n_cross": 1200
+  },
+  "overall_grid": {
+    "claude-opus-4-8": {
+      "claude-opus-4-7": 6.868,
+      "gpt-5.4-mini": 6.777
+    },
+    "claude-sonnet-4-6": {
+      "claude-opus-4-7": 6.78,
+      "gpt-5.4-mini": 7.01
+    },
+    "gemini-2.5-pro": {
+      "claude-opus-4-7": 5.967,
+      "gpt-5.4-mini": 5.823
+    },
+    "gemini-flash-lite": {
+      "claude-opus-4-7": 5.915,
+      "gpt-5.4-mini": 6.277
+    },
+    "gpt-5.4": {
+      "claude-opus-4-7": 6.73,
+      "gpt-5.4-mini": 7.122
+    },
+    "gpt-5.5": {
+      "claude-opus-4-7": 6.995,
+      "gpt-5.4-mini": 6.99
+    }
+  },
+  "self_preference_DiD": {
+    "note": "Difference-in-differences estimator (reviewer delta Q2): per judge, the score premium it gives its OWN family's messages relative to how the other judge scores them, minus the same premium on everyone else's messages. Controls for overall judge harshness; unlike the naive +0.50, symmetric per family (Gemini generators have no self-family judge and are excluded by construction).",
+    "per_judge": {
+      "claude-opus-4-7": {
+        "judge_family": "Claude",
+        "own_family_messages": {
+          "self_judge_mean": 6.824,
+          "other_judge_mean": 6.893
+        },
+        "other_messages": {
+          "self_judge_mean": 6.402,
+          "other_judge_mean": 6.553
+        },
+        "did_self_preference": 0.082
+      },
+      "gpt-5.4-mini": {
+        "judge_family": "OpenAI",
+        "own_family_messages": {
+          "self_judge_mean": 7.056,
+          "other_judge_mean": 6.862
+        },
+        "other_messages": {
+          "self_judge_mean": 6.472,
+          "other_judge_mean": 6.383
+        },
+        "did_self_preference": 0.104
+      }
+    },
+    "mean_did": 0.093
+  },
+  "latency_canonical": {
+    "rule": "Cite the MEDIAN single-session latency everywhere (mean is skewed by cold-start outliers): LR 0.13 ms, RF 13.39 ms, NN 37.58 ms. The 0.14/37.9 variants seen in some docs are the means \u2014 do not mix.",
+    "values": {
+      "LogisticRegression": {
+        "median_ms": 0.1298,
+        "mean_ms": 0.1376
+      },
+      "RandomForest": {
+        "median_ms": 13.3869,
+        "mean_ms": 13.692
+      },
+      "NeuralNetwork": {
+        "median_ms": 37.5761,
+        "mean_ms": 37.9482
+      }
+    }
+  },
+  "inter_judge_agreement_per_generator": {
+    "note": "Codex audit delta (2026-08-02): pooled r inflates agreement via between-generator variance; the defensible comparison vs the 150-session within-Gemini r=0.474 is the per-generator r, summarized by its mean.",
+    "per_generator": {
+      "claude-opus-4-8": {
+        "n": 150,
+        "r": 0.557,
+        "mean_abs_diff": 0.502
+      },
+      "claude-sonnet-4-6": {
+        "n": 150,
+        "r": 0.287,
+        "mean_abs_diff": 0.63
+      },
+      "gemini-2.5-pro": {
+        "n": 150,
+        "r": 0.666,
+        "mean_abs_diff": 0.557
+      },
+      "gemini-flash-lite": {
+        "n": 150,
+        "r": 0.593,
+        "mean_abs_diff": 0.592
+      },
+      "gpt-5.4": {
+        "n": 150,
+        "r": 0.415,
+        "mean_abs_diff": 0.582
+      },
+      "gpt-5.5": {
+        "n": 150,
+        "r": 0.514,
+        "mean_abs_diff": 0.408
+      }
+    },
+    "mean_within_generator_r": 0.505
+  }
+}

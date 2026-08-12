@@ -1,0 +1,4662 @@
+{
+  "meta": {
+    "provider": "google",
+    "generator_model": "gemini-flash-lite",
+    "role": "generator",
+    "n_complete": 150,
+    "source": "gemini_full_results_flash_lite.json",
+    "note": "existing thesis generation, normalized for cross-provider judging"
+  },
+  "results": [
+    {
+      "test_row_index": 1163,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.00902008730918169,
+      "category": "electronics",
+      "cart_value": 511.67,
+      "views_before_cart": 7.0,
+      "time_to_cart": 469811.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3570719148076163,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21842014928870904,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14575225730519337,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 the tech you selected is a top-rated choice, and we offer a 30-day return policy on your $511.67 order for extra peace."
+    },
+    {
+      "test_row_index": 3079,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.016879908740520477,
+      "category": "electronics",
+      "cart_value": 238.48,
+      "views_before_cart": 25.0,
+      "time_to_cart": 514677.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37590302888815125,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21308299607875164,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12707867475121074,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and with 25 product views behind you, you can rest easy knowing this electronics purchase includes our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 4728,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.06107521802186966,
+      "category": "electronics",
+      "cart_value": 401.3,
+      "views_before_cart": 24.0,
+      "time_to_cart": 336931.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3701200237598038,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21152529189086994,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14337183921247534,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing 16 different electronics, you have chosen a high-quality item that comes with our full 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 19537,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.18644411861896515,
+      "category": "electronics",
+      "cart_value": 771.96,
+      "views_before_cart": 19.0,
+      "time_to_cart": 209034.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3586324269118108,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22824656214165773,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13437904377230156,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "After reviewing 19 different items, you have made a solid choice in electronics, and we are holding your $771.96 cart ready for you."
+    },
+    {
+      "test_row_index": 7111,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.28814223408699036,
+      "category": "unknown",
+      "cart_value": 28.43,
+      "views_before_cart": 1.0,
+      "time_to_cart": 58106.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.232314565832775,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17389469668321264,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13636027664197725,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $28.43 item is waiting in your cart, and you are covered by our 30-day satisfaction guarantee if it isn't the perfect fit."
+    },
+    {
+      "test_row_index": 889,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.29398012161254883,
+      "category": "electronics",
+      "cart_value": 198.2,
+      "views_before_cart": 4.0,
+      "time_to_cart": 112864.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13468824728374837,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.06126946660341824,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.0545632083094483,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and we offer 30-day free returns to ensure you are completely satisfied with your $198.20 investment."
+    },
+    {
+      "test_row_index": 1951,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.30499881505966187,
+      "category": "computers",
+      "cart_value": 126.67,
+      "views_before_cart": 12.0,
+      "time_to_cart": 28699.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.35606158227454243,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23183366221340687,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14202662015214823,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your chosen computer is a solid match for your research, and we offer a 30-day return policy on your $126.67 order to ensure it fits."
+    },
+    {
+      "test_row_index": 13751,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3253954350948334,
+      "category": "electronics",
+      "cart_value": 299.88,
+      "views_before_cart": 27.0,
+      "time_to_cart": 2280.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3577224239120827,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23520594989241814,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13372628511316412,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $299.88 electronics selection is a standout choice based on your extensive research, and we offer a 30-day return policy to ensure your total satisfaction."
+    },
+    {
+      "test_row_index": 1895,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3260068893432617,
+      "category": "appliances",
+      "cart_value": 71.82,
+      "views_before_cart": 8.0,
+      "time_to_cart": 31772.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3730707035912634,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2176524907695914,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.10564036751220919,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing five different products, you have found a reliable appliance that includes a 30-day satisfaction guarantee on your $71.82 order."
+    },
+    {
+      "test_row_index": 14138,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.32621023058891296,
+      "category": "electronics",
+      "cart_value": 1085.97,
+      "views_before_cart": 3.0,
+      "time_to_cart": 46028.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13537309649316198,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.11420960115422658,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.07810384470010855,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $1,085.97 electronics selection is ready to ship, and you can secure it today with our 12-month 0% financing plan at checkout."
+    },
+    {
+      "test_row_index": 5866,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.33433717489242554,
+      "category": "electronics",
+      "cart_value": 23.02,
+      "views_before_cart": 5.0,
+      "time_to_cart": 16091.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3574865339469206,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.230318200837297,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12079318734289458,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 our electronics team confirms this $23.02 item is a top-rated choice for those who, like you, value thorough research before buying."
+    },
+    {
+      "test_row_index": 12501,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3344897925853729,
+      "category": "appliances",
+      "cart_value": 48.88,
+      "views_before_cart": 1.0,
+      "time_to_cart": 19911.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.22642508689353982,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17370836420736874,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.15301777533063282,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your appliance is ready to ship, and you have a 30-day money-back guarantee to ensure this $48.88 purchase is exactly what you need."
+    },
+    {
+      "test_row_index": 8285,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.33803635835647583,
+      "category": "electronics",
+      "cart_value": 76.71,
+      "views_before_cart": 3.0,
+      "time_to_cart": 155.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.08777771934139293,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.0538520952440381,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value <= -0.59",
+          "feature_name": "initial_cart_value",
+          "weight": -0.04949682837738078,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have explored three different categories, and our 30-day return policy makes your $76.71 electronics purchase completely risk-free."
+    },
+    {
+      "test_row_index": 10252,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.34063631296157837,
+      "category": "electronics",
+      "cart_value": 53.15,
+      "views_before_cart": 5.0,
+      "time_to_cart": 9550.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.349252895069726,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23807143300579678,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1324159185937259,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your chosen electronic is ready to check out, and with five different products researched, you can be confident this is a solid pick."
+    },
+    {
+      "test_row_index": 9712,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3413230776786804,
+      "category": "appliances",
+      "cart_value": 164.71,
+      "views_before_cart": 21.0,
+      "time_to_cart": 668.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.36383342937809493,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2321409693955246,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13825186310250356,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have clearly done your homework, and this $164.71 appliance is backed by our full manufacturer warranty and easy returns."
+    },
+    {
+      "test_row_index": 1407,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3433489501476288,
+      "category": "appliances",
+      "cart_value": 821.13,
+      "views_before_cart": 6.0,
+      "time_to_cart": 270.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3593964070033302,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23378326184270048,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13551568760270144,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick\u2014you have clearly done your research, so we are holding your $821.13 appliance cart for you with a 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 7044,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3439933657646179,
+      "category": "apparel",
+      "cart_value": 514.68,
+      "views_before_cart": 14.0,
+      "time_to_cart": 1484.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.35900840803933337,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22608331620774647,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1276989234249054,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after browsing 14 different items, you have selected a premium apparel piece that is ready to ship to your door today."
+    },
+    {
+      "test_row_index": 4003,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.34463462233543396,
+      "category": "appliances",
+      "cart_value": 188.03,
+      "views_before_cart": 14.0,
+      "time_to_cart": 2260.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3718730067280758,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2170250028243902,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13434154505620738,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing seven different models, you have found a reliable appliance that includes a full 30-day return policy for your peace of mind."
+    },
+    {
+      "test_row_index": 10747,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3447057008743286,
+      "category": "apparel",
+      "cart_value": 766.76,
+      "views_before_cart": 9.0,
+      "time_to_cart": 564.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.38062058857636577,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21284603096176336,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12367863328442132,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 that $766.76 apparel piece is a standout, and we offer free returns if you need to confirm the fit once it arrives."
+    },
+    {
+      "test_row_index": 12340,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3448686897754669,
+      "category": "electronics",
+      "cart_value": 22.35,
+      "views_before_cart": 4.0,
+      "time_to_cart": 4115.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13102665054637763,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.06965669502553062,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.0598010805526776,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 your $22.35 electronics find is ready to ship, and you have 30 days to test it out with our easy return policy."
+    },
+    {
+      "test_row_index": 1785,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3448694050312042,
+      "category": "auto",
+      "cart_value": 5.79,
+      "views_before_cart": 3.0,
+      "time_to_cart": 456.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12627848057182992,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.07372882617302819,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.06394855137994752,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick, and since you spent time comparing options, you will be glad to know this auto part includes our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 9769,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3454861044883728,
+      "category": "computers",
+      "cart_value": 874.91,
+      "views_before_cart": 37.0,
+      "time_to_cart": 5664.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3582789455968765,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2189399659990895,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13808227099329132,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "After viewing 22 different products, you have clearly done your homework; enjoy peace of mind with our 30-day free return policy on your computer."
+    },
+    {
+      "test_row_index": 11257,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3462076783180237,
+      "category": "unknown",
+      "cart_value": 39.64,
+      "views_before_cart": 5.0,
+      "time_to_cart": 23053.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.34126978080292525,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23677296253291938,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14147356392805868,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 you spent time comparing your options, and this $39.64 item is a top-rated choice that comes with our standard satisfaction guarantee."
+    },
+    {
+      "test_row_index": 84,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.34674882888793945,
+      "category": "furniture",
+      "cart_value": 23.02,
+      "views_before_cart": 12.0,
+      "time_to_cart": 878.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3504690960024877,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.24585637938805685,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12727656393628622,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your furniture choice is a great pick, and with 12 views behind you, you can feel confident that this $23.02 item is the right one."
+    },
+    {
+      "test_row_index": 10009,
+      "cohort": "top_conf_correct",
+      "actual": 0,
+      "predicted_prob_purchase": 0.34837988018989563,
+      "category": "electronics",
+      "cart_value": 23.02,
+      "views_before_cart": 11.0,
+      "time_to_cart": 888.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3765285083223203,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21753531534002982,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11191411710675891,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick\u2014you have done your research across those 11 views, and your $23.02 electronics find is ready for you to finalize whenever you are set."
+    },
+    {
+      "test_row_index": 7574,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9998248219490051,
+      "category": "electronics",
+      "cart_value": 257.38,
+      "views_before_cart": 7.0,
+      "time_to_cart": 588.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37293001724476,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21901730753795245,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12923851526757335,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and with our 30-day return policy on your $257.38 order, you can complete your purchase with total confidence."
+    },
+    {
+      "test_row_index": 9431,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9995080232620239,
+      "category": "electronics",
+      "cart_value": 89.84,
+      "views_before_cart": 10.0,
+      "time_to_cart": 1488.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3677712414888806,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22312661522063093,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12075877621308326,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing 10 different products, you have found a solid electronics choice that includes our 30-day satisfaction guarantee for your $89.84 cart."
+    },
+    {
+      "test_row_index": 11988,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9986016154289246,
+      "category": "electronics",
+      "cart_value": 161.87,
+      "views_before_cart": 5.0,
+      "time_to_cart": 542.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3694202849044492,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23119611701973516,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.1612599479271997,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have already done the research, so enjoy your new electronics with our 30-day no-hassle return policy on your $161.87 order."
+    },
+    {
+      "test_row_index": 5978,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9985755085945129,
+      "category": "electronics",
+      "cart_value": 460.5,
+      "views_before_cart": 8.0,
+      "time_to_cart": 339.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3638588927258848,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2179803183292638,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11051748727525659,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after researching eight different options, your $460.50 electronics selection is waiting for you with a full 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 7955,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9985657930374146,
+      "category": "electronics",
+      "cart_value": 696.15,
+      "views_before_cart": 6.0,
+      "time_to_cart": 576.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3742544171744281,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22574558266900563,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12759811959261766,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you spent time comparing your options, we\u2019ve included a 30-day return policy on your $696.15 electronics order for extra peace."
+    },
+    {
+      "test_row_index": 3555,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9985470175743103,
+      "category": "electronics",
+      "cart_value": 161.9,
+      "views_before_cart": 7.0,
+      "time_to_cart": 454.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3628988501978692,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22702151777977927,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11668674480936657,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and you have free returns for 30 days if this $161.90 item isn't the perfect fit."
+    },
+    {
+      "test_row_index": 967,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9984118342399597,
+      "category": "electronics",
+      "cart_value": 203.35,
+      "views_before_cart": 5.0,
+      "time_to_cart": 756.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3759309536076156,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2218523833732509,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12850581919398985,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you have spent time researching this $203.35 electronic, we provide a full two-year warranty to ensure you feel completely confident."
+    },
+    {
+      "test_row_index": 9828,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9981895089149475,
+      "category": "electronics",
+      "cart_value": 102.94,
+      "views_before_cart": 9.0,
+      "time_to_cart": 301.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.36892581305400063,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22887063022308723,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1308881691524887,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and with our 30-day return policy, you can be confident that this $102.94 purchase is the right fit."
+    },
+    {
+      "test_row_index": 15352,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9980979561805725,
+      "category": "electronics",
+      "cart_value": 28.55,
+      "views_before_cart": 16.0,
+      "time_to_cart": 715.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3744789871026493,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2318418051245314,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14374788587956047,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is a solid choice after comparing so many options, and your $28.55 cart is ready to ship whenever you are."
+    },
+    {
+      "test_row_index": 8882,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9971421360969543,
+      "category": "electronics",
+      "cart_value": 132.31,
+      "views_before_cart": 10.0,
+      "time_to_cart": 916.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3514110692721313,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22812810178076387,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1373062229108145,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have clearly done your research on this $132.31 electronics purchase, and we have it reserved for you whenever you are ready."
+    },
+    {
+      "test_row_index": 1841,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9950252771377563,
+      "category": "electronics",
+      "cart_value": 131.64,
+      "views_before_cart": 11.0,
+      "time_to_cart": 1233.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3544660066095053,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2160099614786609,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12862699277585185,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is a high-rated choice, and we offer a 30-day return window so you can feel confident in your $131.64 purchase."
+    },
+    {
+      "test_row_index": 1514,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9894219636917114,
+      "category": "electronics",
+      "cart_value": 460.76,
+      "views_before_cart": 4.0,
+      "time_to_cart": 310.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3541504956188972,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13798938266125782,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.0912207214029071,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick \u2014 your $460.76 electronics selection is backed by our 30-day hassle-free return policy if you need extra peace of mind before finalizing."
+    },
+    {
+      "test_row_index": 5149,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.989383339881897,
+      "category": "electronics",
+      "cart_value": 587.53,
+      "views_before_cart": 8.0,
+      "time_to_cart": 271.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.35646021884890144,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21910209082032936,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12740334920527535,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $587.53 electronics selection is ready to ship, and our 30-day return policy ensures you can finalize your research with complete peace of mind."
+    },
+    {
+      "test_row_index": 171,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9889264106750488,
+      "category": "electronics",
+      "cart_value": 183.51,
+      "views_before_cart": 5.0,
+      "time_to_cart": 266.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3837841560840148,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21412452729319,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1308373416383929,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you spent time comparing your options, we want to mention your $183.51 electronics order comes with a full 30-day return policy."
+    },
+    {
+      "test_row_index": 3693,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9878091216087341,
+      "category": "electronics",
+      "cart_value": 130.76,
+      "views_before_cart": 4.0,
+      "time_to_cart": 164.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37711812344763246,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.0705430622420081,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.04 < avg_time_between_events <= -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": -0.03812046734117792,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your chosen electronic item is highly rated, and with a $130.76 total, you are eligible for our 30-day hassle-free return policy."
+    },
+    {
+      "test_row_index": 7493,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9868766069412231,
+      "category": "electronics",
+      "cart_value": 161.88,
+      "views_before_cart": 3.0,
+      "time_to_cart": 184.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37203460534382765,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.06008615933604614,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.05272486796049561,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and with our 30-day return policy, you can be fully confident in your $161.88 purchase."
+    },
+    {
+      "test_row_index": 7351,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9853262305259705,
+      "category": "appliances",
+      "cart_value": 90.33,
+      "views_before_cart": 5.0,
+      "time_to_cart": 379.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3692011885727758,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22444686693870833,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12824584710566136,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and with your $90.33 appliance order, you are covered by our hassle-free, 30-day return policy if it isn't the perfect fit."
+    },
+    {
+      "test_row_index": 14517,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9846102595329285,
+      "category": "electronics",
+      "cart_value": 197.61,
+      "views_before_cart": 7.0,
+      "time_to_cart": 350.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.356870574956575,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2231370942141909,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13443719019304623,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have done your research, and our 30-day return policy ensures your $197.61 electronics purchase is completely risk-free."
+    },
+    {
+      "test_row_index": 17632,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9843814969062805,
+      "category": "electronics",
+      "cart_value": 628.13,
+      "views_before_cart": 6.0,
+      "time_to_cart": 467.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3650290915888748,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2198122568345128,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12589665482244788,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $628.13 electronics pick is ready to ship, and you have a 30-day window to return it if it is not a perfect fit."
+    },
+    {
+      "test_row_index": 18551,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.98408043384552,
+      "category": "electronics",
+      "cart_value": 174.06,
+      "views_before_cart": 5.0,
+      "time_to_cart": 456.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.36132274706314965,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2335901058486995,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12574490717401107,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after five views, you have clearly done your research, and we are holding your $174.06 cart for you to finalize today."
+    },
+    {
+      "test_row_index": 17778,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9828547835350037,
+      "category": "electronics",
+      "cart_value": 741.1,
+      "views_before_cart": 11.0,
+      "time_to_cart": 328.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3627101215603609,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22951297408434934,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13522833754290228,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick\u2014you have clearly done your homework, and your $741.10 electronics order is backed by our 30-day satisfaction guarantee if you need more peace."
+    },
+    {
+      "test_row_index": 19321,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9826503396034241,
+      "category": "electronics",
+      "cart_value": 131.92,
+      "views_before_cart": 5.0,
+      "time_to_cart": 299.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.384200885176299,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21046397664183608,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12762047295455475,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and you have free returns for 30 days if this $131.92 item isn't the perfect fit."
+    },
+    {
+      "test_row_index": 6746,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9802501797676086,
+      "category": "electronics",
+      "cart_value": 185.67,
+      "views_before_cart": 7.0,
+      "time_to_cart": 540.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3584513376642698,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2240662388113965,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13697114852403838,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your chosen electronics item is a solid find after browsing those seven options, and we offer a 30-day return window on your $185.67 order."
+    },
+    {
+      "test_row_index": 9687,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9798380136489868,
+      "category": "electronics",
+      "cart_value": 131.76,
+      "views_before_cart": 11.0,
+      "time_to_cart": 388.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3677035305682992,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22380597396136104,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12727978609367407,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is a high-quality choice, and you can complete your $131.76 order now with our 30-day hassle-free return guarantee."
+    },
+    {
+      "test_row_index": 4318,
+      "cohort": "top_conf_correct",
+      "actual": 1,
+      "predicted_prob_purchase": 0.9796528816223145,
+      "category": "electronics",
+      "cart_value": 189.27,
+      "views_before_cart": 4.0,
+      "time_to_cart": 478.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3879399291976955,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12320686459177277,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.06623095263675911,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and you have our 30-day satisfaction guarantee to ensure this $189.27 investment is perfect for you."
+    },
+    {
+      "test_row_index": 8050,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3943738043308258,
+      "category": "appliances",
+      "cart_value": 64.05,
+      "views_before_cart": 1.0,
+      "time_to_cart": 27.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2407986871397679,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17633267604614034,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.05105577970038786,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $64.05 appliance is ready for checkout, and we offer a 30-day satisfaction guarantee to ensure it fits your home perfectly."
+    },
+    {
+      "test_row_index": 10277,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.39489033818244934,
+      "category": "electronics",
+      "cart_value": 160.88,
+      "views_before_cart": 4.0,
+      "time_to_cart": 396.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11947946201307191,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.0773346981388164,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.07286724121100305,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $160.88 electronics selection is ready to ship, and you have a 30-day window to test it out risk-free."
+    },
+    {
+      "test_row_index": 9009,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4038104712963104,
+      "category": "appliances",
+      "cart_value": 126.1,
+      "views_before_cart": 1.0,
+      "time_to_cart": 40.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.22705776105750203,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.14649895829055726,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.06004946662494771,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $126.10 appliance is ready to check out, and we offer a 30-day return policy to ensure it is the perfect fit for your home."
+    },
+    {
+      "test_row_index": 1754,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.43034303188323975,
+      "category": "electronics",
+      "cart_value": 433.67,
+      "views_before_cart": 1.0,
+      "time_to_cart": 86.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23737447813904833,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.16114328002068956,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.12790444158951475,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Your $433.67 electronics pick is ready for checkout, and we offer a 30-day return policy to ensure you are completely satisfied with your choice."
+    },
+    {
+      "test_row_index": 15591,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3707903027534485,
+      "category": "appliances",
+      "cart_value": 174.78,
+      "views_before_cart": 9.0,
+      "time_to_cart": 492.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3567477940419756,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22998784356069385,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12442697451627857,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing your options, you can secure this $174.78 appliance today with our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 19408,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.5329018235206604,
+      "category": "electronics",
+      "cart_value": 131.64,
+      "views_before_cart": 1.0,
+      "time_to_cart": 22.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24998407492864153,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15585113563200992,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.04636300040969737,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $131.64 electronics pick is waiting for you, and we offer a 30-day money-back guarantee if it is not the perfect fit."
+    },
+    {
+      "test_row_index": 12894,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4740849435329437,
+      "category": "electronics",
+      "cart_value": 128.68,
+      "views_before_cart": 2.0,
+      "time_to_cart": 100.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.06 < time_to_cart <= -0.03",
+          "feature_name": "time_to_cart",
+          "weight": 0.056916752708501044,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.054812163066128856,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.05170619165300605,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you spent some time researching your $128.68 electronics choice, rest assured it is backed by our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 14031,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5652141571044922,
+      "category": "electronics",
+      "cart_value": 975.56,
+      "views_before_cart": 1.0,
+      "time_to_cart": 10.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24230580813245867,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15551188056481952,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.0973928968293298,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $975.56 electronics order qualifies for our 12-month 0% financing plan, making this premium tech much easier to fit into your monthly budget."
+    },
+    {
+      "test_row_index": 5527,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4156557619571686,
+      "category": "electronics",
+      "cart_value": 696.51,
+      "views_before_cart": 18.0,
+      "time_to_cart": 1709.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37060082432011293,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2479784529236358,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14320065213646188,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing 12 different items, you have selected a high-quality piece of electronics that comes with our full two-year performance guarantee."
+    },
+    {
+      "test_row_index": 8927,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5124461650848389,
+      "category": "electronics",
+      "cart_value": 424.7,
+      "views_before_cart": 3.0,
+      "time_to_cart": 112.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.05577151073840951,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "unique_products_viewed > -0.07",
+          "feature_name": "unique_products_viewed",
+          "weight": 0.05265490357442321,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.06 < time_to_cart <= -0.03",
+          "feature_name": "time_to_cart",
+          "weight": 0.052424539956790514,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and with your $424.70 cart, you qualify for our 30-day no-hassle return policy."
+    },
+    {
+      "test_row_index": 7106,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5454457998275757,
+      "category": "electronics",
+      "cart_value": 553.42,
+      "views_before_cart": 2.0,
+      "time_to_cart": 39.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.11953129347221592,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.08021888179270585,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.07146530356726678,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "You can lock in your $553.42 electronics purchase today with our 12-month 0% interest financing plan, making your high-end gear much easier to manage."
+    },
+    {
+      "test_row_index": 13586,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.44885045289993286,
+      "category": "electronics",
+      "cart_value": 274.91,
+      "views_before_cart": 1.0,
+      "time_to_cart": 75.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2419373515525062,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17825759743623293,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.06 < time_to_cart <= -0.03",
+          "feature_name": "time_to_cart",
+          "weight": 0.05908030675461272,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $274.91 electronics pick is waiting for you, and we offer a 30-day return policy if you decide to change your mind."
+    },
+    {
+      "test_row_index": 8655,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4195740222930908,
+      "category": "electronics",
+      "cart_value": 1412.88,
+      "views_before_cart": 2.0,
+      "time_to_cart": 163.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.09687673455685723,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.06938918337390713,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.06185126235565552,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Spread the cost of your $1,412.88 electronics purchase with our 0% interest financing options available at checkout to make this investment easier."
+    },
+    {
+      "test_row_index": 1337,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.39972931146621704,
+      "category": "electronics",
+      "cart_value": 188.92,
+      "views_before_cart": 2.0,
+      "time_to_cart": 52.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.14650412312351332,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.05180490615902279,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.59 < initial_cart_value <= -0.40",
+          "feature_name": "initial_cart_value",
+          "weight": -0.04719099728186305,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Only a few units of this electronics item remain in stock at $188.92, so complete your purchase now to secure your order."
+    },
+    {
+      "test_row_index": 15718,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4895593225955963,
+      "category": "electronics",
+      "cart_value": 142.26,
+      "views_before_cart": 5.0,
+      "time_to_cart": 284.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3710376732822834,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2218164313675395,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.16535334572169882,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have already done your research across four different electronics, and we offer a 30-day return policy on your $142.26 cart."
+    },
+    {
+      "test_row_index": 10538,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3917098939418793,
+      "category": "electronics",
+      "cart_value": 22.38,
+      "views_before_cart": 1.0,
+      "time_to_cart": 120.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2362653092013521,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1728502176477925,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.04481647062110977,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and we offer a 30-day money-back guarantee to ensure you are fully satisfied with your $22.38 purchase."
+    },
+    {
+      "test_row_index": 10023,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3802599012851715,
+      "category": "electronics",
+      "cart_value": 23.04,
+      "views_before_cart": 4.0,
+      "time_to_cart": 409.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11701087074967545,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.07667531193865537,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.058691252786340936,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and you are covered by our 30-day satisfaction guarantee on your $23.04 order."
+    },
+    {
+      "test_row_index": 15180,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.40761539340019226,
+      "category": "electronics",
+      "cart_value": 975.56,
+      "views_before_cart": 1.0,
+      "time_to_cart": 53.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23789053906573546,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.16323643957762732,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.1287443521525372,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $975.56 electronics order is ready, and we offer 12-month 0% financing to help you manage the cost of this top-tier investment."
+    },
+    {
+      "test_row_index": 3997,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.451369047164917,
+      "category": "electronics",
+      "cart_value": 218.54,
+      "views_before_cart": 6.0,
+      "time_to_cart": 644.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3644431005251736,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21988465616173197,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1286725022740361,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you spent time comparing your options, you will be happy to know this $218.54 item includes a full 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 16784,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.46178898215293884,
+      "category": "electronics",
+      "cart_value": 180.96,
+      "views_before_cart": 4.0,
+      "time_to_cart": 561.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13349142734031166,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.08620145299776369,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.08213288198505202,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and you have free returns for 30 days on that $180.96 electronics order if it ends up not being the perfect fit."
+    },
+    {
+      "test_row_index": 11108,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.47779136896133423,
+      "category": "computers",
+      "cart_value": 639.24,
+      "views_before_cart": 1.0,
+      "time_to_cart": 12.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.25126974126206447,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17242512149110936,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.11906231150096314,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $639.24 computer purchase comes with a 30-day money-back guarantee, ensuring your quick decision is a risk-free investment in your new setup."
+    },
+    {
+      "test_row_index": 16457,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.46997177600860596,
+      "category": "appliances",
+      "cart_value": 89.38,
+      "views_before_cart": 33.0,
+      "time_to_cart": 884.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.348775928507779,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.24153089635703234,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11962795369990356,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing 17 different options, you have selected a high-quality appliance that includes a full 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 3278,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5765878558158875,
+      "category": "electronics",
+      "cart_value": 286.67,
+      "views_before_cart": 5.0,
+      "time_to_cart": 96.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37317836447088365,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2239504320498146,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.14328303318502214,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have compared five different electronics, and our 30-day return policy ensures you can finalize your $286.67 purchase with total confidence."
+    },
+    {
+      "test_row_index": 13945,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4865201413631439,
+      "category": "electronics",
+      "cart_value": 347.22,
+      "views_before_cart": 4.0,
+      "time_to_cart": 97.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.053457573242061844,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.06 < time_to_cart <= -0.03",
+          "feature_name": "time_to_cart",
+          "weight": 0.04893335416624599,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.40 < initial_cart_value <= 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": -0.043788120136034295,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick, and since you spent time researching your options, we want to ensure you know this $347.22 electronics purchase includes a full warranty."
+    },
+    {
+      "test_row_index": 17746,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4275768995285034,
+      "category": "electronics",
+      "cart_value": 378.77,
+      "views_before_cart": 7.0,
+      "time_to_cart": 457.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3620170157240866,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23989590700034216,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11966861833182928,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you have already compared several options, enjoy peace of mind with our 30-day return policy on your $378.77 electronics order."
+    },
+    {
+      "test_row_index": 17871,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4437532126903534,
+      "category": "electronics",
+      "cart_value": 150.29,
+      "views_before_cart": 8.0,
+      "time_to_cart": 487.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3790706396722294,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21274672490774033,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12534717490646882,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have done your research, and we are backing your $150.29 electronics choice with a full 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 8774,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.5180953741073608,
+      "category": "electronics",
+      "cart_value": 131.76,
+      "views_before_cart": 1.0,
+      "time_to_cart": 26.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.25467822913706845,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.16131202019452795,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.03751160337722533,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $131.76 electronics pick is waiting for you, and we offer a 30-day return window if you want to test it out risk-free."
+    },
+    {
+      "test_row_index": 1817,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.44570815563201904,
+      "category": "electronics",
+      "cart_value": 230.59,
+      "views_before_cart": 2.0,
+      "time_to_cart": 494.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14234936134951717,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.07561635391605726,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.053352388178587194,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and we offer a 30-day money-back guarantee to ensure you feel confident in your $230.59 purchase."
+    },
+    {
+      "test_row_index": 17142,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.3976692259311676,
+      "category": "electronics",
+      "cart_value": 28.8,
+      "views_before_cart": 3.0,
+      "time_to_cart": 52.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.06600949653816432,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.0656800848744999,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.06386176205887009,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $28.80 electronics selection is waiting, and we offer a full 30-day return policy if it doesn't meet your expectations."
+    },
+    {
+      "test_row_index": 18519,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.43937012553215027,
+      "category": "electronics",
+      "cart_value": 1001.31,
+      "views_before_cart": 1.0,
+      "time_to_cart": 62.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23066751092205726,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.19118916748159856,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1764061321432411,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $1001.31 electronics purchase is waiting, and we provide a full 30-day return window to ensure you are completely satisfied with your choice."
+    },
+    {
+      "test_row_index": 12661,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4647570848464966,
+      "category": "unknown",
+      "cart_value": 64.33,
+      "views_before_cart": 1.0,
+      "time_to_cart": 4.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24179937443748897,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17374332502022632,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value <= -0.59",
+          "feature_name": "initial_cart_value",
+          "weight": -0.06001634214463152,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $64.33 find is a great pick, and since you made such a quick choice, you can enjoy peace of mind with our 30-day return policy."
+    },
+    {
+      "test_row_index": 13087,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.5797274112701416,
+      "category": "electronics",
+      "cart_value": 197.3,
+      "views_before_cart": 1.0,
+      "time_to_cart": 12.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2510252557082419,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15971613550964947,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.06350191286575874,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $197.30 electronics selection is ready to ship, and we offer a 30-day money-back guarantee if it is not exactly what you need."
+    },
+    {
+      "test_row_index": 14710,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4172998368740082,
+      "category": "electronics",
+      "cart_value": 730.26,
+      "views_before_cart": 10.0,
+      "time_to_cart": 404.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3730310930719274,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22015081514846505,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12992157780111938,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after researching those ten items, you can rest easy knowing your $730.26 electronics order is backed by our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 9016,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.44404909014701843,
+      "category": "electronics",
+      "cart_value": 161.83,
+      "views_before_cart": 2.0,
+      "time_to_cart": 66.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.06418096640877775,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.06417940270108621,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.048174890261496635,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $161.83 electronics pick is waiting, and we offer a 30-day return policy to ensure you are completely satisfied with your purchase."
+    },
+    {
+      "test_row_index": 19472,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.41719451546669006,
+      "category": "computers",
+      "cart_value": 95.56,
+      "views_before_cart": 2.0,
+      "time_to_cart": 221.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "unique_categories_viewed <= 0.10",
+          "feature_name": "unique_categories_viewed",
+          "weight": 0.07915111530686278,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.0719286503185098,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.05903350026024338,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your chosen computer is a reliable performer, and you can shop with confidence knowing we include a full 30-day return policy on all orders."
+    },
+    {
+      "test_row_index": 14346,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.47307080030441284,
+      "category": "electronics",
+      "cart_value": 159.69,
+      "views_before_cart": 2.0,
+      "time_to_cart": 122.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.12507916374521824,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.08038565865784497,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.59 < initial_cart_value <= -0.40",
+          "feature_name": "initial_cart_value",
+          "weight": -0.06099600821867014,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Only two units of this electronics item remain in our inventory, so complete your $159.69 order now to guarantee your delivery."
+    },
+    {
+      "test_row_index": 1254,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4504506289958954,
+      "category": "electronics",
+      "cart_value": 129.96,
+      "views_before_cart": 2.0,
+      "time_to_cart": 330.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1373351466108052,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.044981541517903754,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.04340213821324386,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for you, and we offer a 30-day return policy to ensure you are fully satisfied with your $129.96 purchase."
+    },
+    {
+      "test_row_index": 15219,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4178867042064667,
+      "category": "electronics",
+      "cart_value": 1415.48,
+      "views_before_cart": 2.0,
+      "time_to_cart": 112.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.1012575110384414,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.0746890420510052,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.06 < time_to_cart <= -0.03",
+          "feature_name": "time_to_cart",
+          "weight": 0.07188553070728838,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "You can lock in this high-end electronic device today with our 12-month zero-interest financing plan, making that $1,415 total much easier to manage."
+    },
+    {
+      "test_row_index": 8875,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.38330867886543274,
+      "category": "appliances",
+      "cart_value": 55.78,
+      "views_before_cart": 7.0,
+      "time_to_cart": 403.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3677341598608006,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.21608657018856525,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.1409384350405995,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after viewing seven different options, you have found the right appliance to complete your home for just $55.78."
+    },
+    {
+      "test_row_index": 17164,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.40024587512016296,
+      "category": "appliances",
+      "cart_value": 84.43,
+      "views_before_cart": 4.0,
+      "time_to_cart": 185.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.0858801898813615,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.05960459071395896,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.055157847876082626,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your chosen appliance is a solid pick, and we offer a 30-day satisfaction guarantee to ensure that $84.43 investment is exactly what you need."
+    },
+    {
+      "test_row_index": 10923,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4534755349159241,
+      "category": "electronics",
+      "cart_value": 187.96,
+      "views_before_cart": 4.0,
+      "time_to_cart": 129.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.057853998090116696,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.05250114668478087,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.59 < initial_cart_value <= -0.40",
+          "feature_name": "initial_cart_value",
+          "weight": -0.049950455153466786,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have viewed this electronic item four times, and our 30-day return policy ensures you can buy with complete confidence."
+    },
+    {
+      "test_row_index": 4525,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.5864227414131165,
+      "category": "electronics",
+      "cart_value": 370.4,
+      "views_before_cart": 1.0,
+      "time_to_cart": 10.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2398822612807486,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15817667020440762,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.04309594475772222,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick on this $370.40 electronics item; we have reserved your cart for the next hour if you need a moment to finalize everything."
+    },
+    {
+      "test_row_index": 1689,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.45948725938796997,
+      "category": "appliances",
+      "cart_value": 336.95,
+      "views_before_cart": 5.0,
+      "time_to_cart": 55.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3490717479439211,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23047867101493427,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.12967690279432614,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Great pick \u2014 this $336.95 appliance is a top-rated choice, and we offer a 30-day return policy if it is not the perfect fit."
+    },
+    {
+      "test_row_index": 15635,
+      "cohort": "mid_confidence",
+      "actual": 1,
+      "predicted_prob_purchase": 0.5373969674110413,
+      "category": "electronics",
+      "cart_value": 191.77,
+      "views_before_cart": 1.0,
+      "time_to_cart": 16.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24140891299239675,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15768468499063912,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.04324660160608761,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $191.77 electronics pick is waiting for you, and we offer a full 30-day return policy if it is not the perfect fit."
+    },
+    {
+      "test_row_index": 15463,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.46935784816741943,
+      "category": "electronics",
+      "cart_value": 250.97,
+      "views_before_cart": 1.0,
+      "time_to_cart": 42.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.22413520158183828,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.16986358807609503,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events <= -0.05",
+          "feature_name": "avg_time_between_events",
+          "weight": -0.046510158409845334,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $250.97 electronics selection is reserved, and you have free returns for 30 days if it is not exactly what you need."
+    },
+    {
+      "test_row_index": 3622,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5712926387786865,
+      "category": "electronics",
+      "cart_value": 538.84,
+      "views_before_cart": 5.0,
+      "time_to_cart": 78.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3543157929710169,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.24903462162529233,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.08868064572783702,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick \u2014 the electronics you selected are a top-rated choice, and we offer free 30-day returns on your $538.84 order to ensure you're satisfied."
+    },
+    {
+      "test_row_index": 7422,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4342370927333832,
+      "category": "electronics",
+      "cart_value": 98.51,
+      "views_before_cart": 5.0,
+      "time_to_cart": 141.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3618911340252546,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22695979097469376,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value <= -0.59",
+          "feature_name": "initial_cart_value",
+          "weight": -0.05309972720703222,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Great pick \u2014 the tech you selected is a top-rated choice, and we offer 30-day free returns on your $98.51 order to ensure it fits."
+    },
+    {
+      "test_row_index": 2531,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4734766483306885,
+      "category": "electronics",
+      "cart_value": 170.92,
+      "views_before_cart": 7.0,
+      "time_to_cart": 699.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3670705838920349,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23108555641554382,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12489038728025083,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 you have done your research, and we are happy to offer free returns on your $170.92 electronics order if it isn't perfect."
+    },
+    {
+      "test_row_index": 1857,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.44787245988845825,
+      "category": "unknown",
+      "cart_value": 12.83,
+      "views_before_cart": 4.0,
+      "time_to_cart": 37.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.07013743318105554,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value <= -0.59",
+          "feature_name": "initial_cart_value",
+          "weight": -0.06890718210286818,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.0568099992431819,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $12.83 find is ready to ship, and with four items already explored, you have clearly done the research to make a great choice."
+    },
+    {
+      "test_row_index": 16563,
+      "cohort": "mid_confidence",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4642488956451416,
+      "category": "electronics",
+      "cart_value": 191.77,
+      "views_before_cart": 2.0,
+      "time_to_cart": 255.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.10798405492322591,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.06810375592882366,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.04126267990503732,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $191.77 electronics pick is ready for checkout, and you can shop with peace of mind knowing we offer free 30-day returns."
+    },
+    {
+      "test_row_index": 15687,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5862364768981934,
+      "category": "electronics",
+      "cart_value": 230.59,
+      "views_before_cart": 1.0,
+      "time_to_cart": 11.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24067007843850236,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.13937631340692225,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.0482198661497016,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $230.59 electronics pick is ready to ship, and you are fully covered by our 30-day no-questions-asked return policy."
+    },
+    {
+      "test_row_index": 15904,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.46474602818489075,
+      "category": "electronics",
+      "cart_value": 150.53,
+      "views_before_cart": 1.0,
+      "time_to_cart": 57.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23859790390381244,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17953342606225775,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.59 < initial_cart_value <= -0.40",
+          "feature_name": "initial_cart_value",
+          "weight": -0.05477370033944072,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your electronics selection is ready for checkout, and you can shop with confidence knowing we offer free 30-day returns on your $150.53 order."
+    },
+    {
+      "test_row_index": 9163,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.6199259757995605,
+      "category": "electronics",
+      "cart_value": 161.84,
+      "views_before_cart": 1.0,
+      "time_to_cart": 5.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2388473724245431,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15435757355784516,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.05019137641436083,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $161.84 electronics choice is waiting for you, and we offer a 30-day return policy if it does not meet your expectations."
+    },
+    {
+      "test_row_index": 2843,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5872911214828491,
+      "category": "electronics",
+      "cart_value": 130.49,
+      "views_before_cart": 1.0,
+      "time_to_cart": 7.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.22847841066231853,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17260882961687327,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.13181147395044557,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Your $130.49 electronics selection is reserved for you, and we offer free 30-day returns if it is not exactly what you were looking for."
+    },
+    {
+      "test_row_index": 775,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.575614869594574,
+      "category": "electronics",
+      "cart_value": 250.88,
+      "views_before_cart": 1.0,
+      "time_to_cart": 11.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23704474720771915,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17156179657257403,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.13760850311270476,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Your choice of electronics is ready to check out, and you have free returns for 30 days if it isn't quite right for you."
+    },
+    {
+      "test_row_index": 4079,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4668326675891876,
+      "category": "electronics",
+      "cart_value": 131.02,
+      "views_before_cart": 2.0,
+      "time_to_cart": 198.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.05450155902410375,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.59 < initial_cart_value <= -0.40",
+          "feature_name": "initial_cart_value",
+          "weight": -0.04671326965581153,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.044271485095022975,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $131.02 electronics pick is ready to ship, and you can shop with peace of mind knowing we offer free 30-day returns."
+    },
+    {
+      "test_row_index": 5008,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5114489197731018,
+      "category": "electronics",
+      "cart_value": 464.08,
+      "views_before_cart": 2.0,
+      "time_to_cart": 428.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.14572470264694143,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.11164425265307118,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.07821703474225387,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and you can shop with confidence knowing we offer free 30-day returns on your $464 order."
+    },
+    {
+      "test_row_index": 9398,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5550082921981812,
+      "category": "electronics",
+      "cart_value": 22.38,
+      "views_before_cart": 1.0,
+      "time_to_cart": 5.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24059060474267843,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1677442227573473,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.05395749065964053,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and you have a 30-day window to return your $22.38 order if it is not perfect."
+    },
+    {
+      "test_row_index": 10112,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5822153091430664,
+      "category": "electronics",
+      "cart_value": 250.86,
+      "views_before_cart": 1.0,
+      "time_to_cart": 11.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.22973614333258904,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.16616843673470513,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.16095591873895318,
+          "category": "cart_composition"
+        }
+      ],
+      "intervention": "Your $250.86 electronics selection is ready to ship, and you have 30 days to return it if it is not the perfect fit."
+    },
+    {
+      "test_row_index": 13098,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.45966288447380066,
+      "category": "electronics",
+      "cart_value": 161.84,
+      "views_before_cart": 1.0,
+      "time_to_cart": 56.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23448576803074744,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1640195717940056,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.05626050613418829,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and you have 30 days of free returns if you find it is not the perfect fit."
+    },
+    {
+      "test_row_index": 16032,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.6048773527145386,
+      "category": "electronics",
+      "cart_value": 1003.85,
+      "views_before_cart": 1.0,
+      "time_to_cart": 6.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24337485720220015,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.14835765573270854,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.10065343786073322,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $1003.85 electronics purchase is backed by our 30-day satisfaction guarantee, ensuring you have total peace of mind once it arrives."
+    },
+    {
+      "test_row_index": 2839,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.49115633964538574,
+      "category": "electronics",
+      "cart_value": 253.16,
+      "views_before_cart": 3.0,
+      "time_to_cart": 84.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.10732925878928637,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.08186158790630899,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.06158486167462227,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Only a few units of this $253.16 electronics essential remain in stock, so complete your purchase now to secure your item."
+    },
+    {
+      "test_row_index": 15565,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.45527034997940063,
+      "category": "electronics",
+      "cart_value": 250.93,
+      "views_before_cart": 2.0,
+      "time_to_cart": 138.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.10743263231961467,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "-0.04 < avg_time_between_events <= -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": -0.040177868547521485,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.03845899758345058,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Only a few of this $250.93 electronics item remain in our current inventory, so complete your checkout now to secure your order."
+    },
+    {
+      "test_row_index": 166,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5425122380256653,
+      "category": "electronics",
+      "cart_value": 230.61,
+      "views_before_cart": 1.0,
+      "time_to_cart": 23.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23365581062235827,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1456633938701013,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart <= -0.07",
+          "feature_name": "time_to_cart",
+          "weight": 0.05462565875333409,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $230.61 electronics purchase includes our 30-day satisfaction guarantee, so you can test your new gear with complete peace of mind."
+    },
+    {
+      "test_row_index": 5619,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5662506818771362,
+      "category": "electronics",
+      "cart_value": 643.23,
+      "views_before_cart": 2.0,
+      "time_to_cart": 36.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.09771564421330474,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.08028788166195949,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.056933667359200184,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $643 electronics order qualifies for our 12-month 0% financing plan, making it easier to bring home your high-performance pick today."
+    },
+    {
+      "test_row_index": 13267,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.47645434737205505,
+      "category": "electronics",
+      "cart_value": 1027.05,
+      "views_before_cart": 3.0,
+      "time_to_cart": 75.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.1038554151885501,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.07114583756384843,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.0680554216709343,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Finance your $1,027.05 electronics purchase with our 12-month 0% interest plan to break your investment into more manageable monthly payments."
+    },
+    {
+      "test_row_index": 13354,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4832487106323242,
+      "category": "electronics",
+      "cart_value": 348.43,
+      "views_before_cart": 13.0,
+      "time_to_cart": 534.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3454027901564283,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.24325583222444247,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.15404528474393092,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $348.43 electronics selection is ready to check out, and you have free returns for 30 days if it isn't quite right for you."
+    },
+    {
+      "test_row_index": 9388,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.5562013983726501,
+      "category": "electronics",
+      "cart_value": 254.76,
+      "views_before_cart": 1.0,
+      "time_to_cart": 21.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2268137274787714,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.2035645955017283,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17826608325184531,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $254.76 electronics pick is waiting, and we offer a 30-day return policy to ensure you are completely satisfied with your choice."
+    },
+    {
+      "test_row_index": 14072,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.46524977684020996,
+      "category": "electronics",
+      "cart_value": 230.08,
+      "views_before_cart": 1.0,
+      "time_to_cart": 45.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23444594351393455,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1603868980804087,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.054814347822696875,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to head your way, and you are fully covered by our 30-day no-questions-asked return policy."
+    },
+    {
+      "test_row_index": 2354,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.46160176396369934,
+      "category": "electronics",
+      "cart_value": 174.34,
+      "views_before_cart": 1.0,
+      "time_to_cart": 87.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23949342063429221,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.22258388543803634,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.14587576989569848,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $174.34 electronics pick is ready to ship, and you have free returns for 30 days if it is not exactly what you need."
+    },
+    {
+      "test_row_index": 15594,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.6240807175636292,
+      "category": "appliances",
+      "cart_value": 64.02,
+      "views_before_cart": 1.0,
+      "time_to_cart": 2.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2429945827298359,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1497306837747754,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.045214869547390985,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your appliance choice is backed by our 30-day satisfaction guarantee, so you can finish your $64.02 order with total peace of mind."
+    },
+    {
+      "test_row_index": 11369,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4775019586086273,
+      "category": "electronics",
+      "cart_value": 730.26,
+      "views_before_cart": 1.0,
+      "time_to_cart": 19.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2381719098347018,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1695310194840054,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.09811516008526532,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $730.26 electronics order qualifies for our 30-day worry-free returns, giving you total peace of mind once it arrives."
+    },
+    {
+      "test_row_index": 16612,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.4516192376613617,
+      "category": "electronics",
+      "cart_value": 251.59,
+      "views_before_cart": 3.0,
+      "time_to_cart": 463.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.11466491571772189,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.06176029957573784,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.051984218429481,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 this piece of electronics is backed by our 30-day satisfaction guarantee, so you can complete your $251.59 order with total peace of mind."
+    },
+    {
+      "test_row_index": 11141,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.46604442596435547,
+      "category": "electronics",
+      "cart_value": 136.43,
+      "views_before_cart": 3.0,
+      "time_to_cart": 141.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.0880469622696244,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.057668937925160035,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.59 < initial_cart_value <= -0.40",
+          "feature_name": "initial_cart_value",
+          "weight": -0.05650165298567321,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and you have our 30-day satisfaction guarantee to ensure this $136.43 investment is the perfect choice."
+    },
+    {
+      "test_row_index": 8783,
+      "cohort": "misclassified",
+      "actual": 0,
+      "predicted_prob_purchase": 0.48192957043647766,
+      "category": "electronics",
+      "cart_value": 88.81,
+      "views_before_cart": 3.0,
+      "time_to_cart": 86.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.07259207190173186,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.06692771125178633,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.05428503069937529,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $88.81 electronics choice includes a 30-day price match guarantee, ensuring you get the best value for your gear today."
+    },
+    {
+      "test_row_index": 13234,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.39392805099487305,
+      "category": "electronics",
+      "cart_value": 73.54,
+      "views_before_cart": 6.0,
+      "time_to_cart": 839.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.34879845975610063,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23713349024504876,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13451423330171586,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your chosen $73.54 electronic item comes with a 30-day satisfaction guarantee, so you can finalize your research with complete peace of mind."
+    },
+    {
+      "test_row_index": 2214,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.44266965985298157,
+      "category": "computers",
+      "cart_value": 513.81,
+      "views_before_cart": 10.0,
+      "time_to_cart": 207.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.34927805261811723,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.24274694522100654,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.11202642815820112,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $513.81 computer pick is a high-performance choice, and we offer a 30-day money-back guarantee to ensure it perfectly matches your research needs."
+    },
+    {
+      "test_row_index": 16243,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.40360912680625916,
+      "category": "appliances",
+      "cart_value": 347.27,
+      "views_before_cart": 7.0,
+      "time_to_cart": 238.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37103086722257916,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22256390415723482,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13682725820022382,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your appliance choice is backed by our full warranty, and with seven views already, you have clearly done the research to make a great decision."
+    },
+    {
+      "test_row_index": 376,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.39254939556121826,
+      "category": "appliances",
+      "cart_value": 282.89,
+      "views_before_cart": 28.0,
+      "time_to_cart": 2068.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.37492667293681614,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2173276932514911,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13126545618056554,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 this appliance ranks among the top-rated models from our customers who, like you, carefully researched multiple options before finalizing their purchase."
+    },
+    {
+      "test_row_index": 15533,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4385662376880646,
+      "category": "electronics",
+      "cart_value": 32.16,
+      "views_before_cart": 2.0,
+      "time_to_cart": 45.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value <= -0.59",
+          "feature_name": "initial_cart_value",
+          "weight": -0.062121525951603536,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.05506778418118779,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.05028513061292371,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and we offer a 30-day money-back guarantee if you are not satisfied with your $32.16 purchase."
+    },
+    {
+      "test_row_index": 6301,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.40433597564697266,
+      "category": "electronics",
+      "cart_value": 483.48,
+      "views_before_cart": 19.0,
+      "time_to_cart": 1630.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.35561387169761544,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.22482354688899012,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13523433820932568,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick, and since you spent time comparing 14 different products, rest assured that your $483.48 electronics purchase is backed by our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 7900,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.36695584654808044,
+      "category": "electronics",
+      "cart_value": 23.05,
+      "views_before_cart": 2.0,
+      "time_to_cart": 626.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13543139085538766,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.43 < total_events_before_cart <= -0.25",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.06276524916171144,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.061513285818292546,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $23.05 electronics pick is ready to ship, and we offer a 30-day money-back guarantee to ensure you are happy with your choice."
+    },
+    {
+      "test_row_index": 19876,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.3767072856426239,
+      "category": "auto",
+      "cart_value": 120.98,
+      "views_before_cart": 3.0,
+      "time_to_cart": 471.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.161325636704328,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.08276836649966673,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.06823869552197097,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your auto part is ready to ship, and with our 30-day fitment guarantee, you can feel confident that this $120.98 investment is the right choice."
+    },
+    {
+      "test_row_index": 3046,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4110448956489563,
+      "category": "auto",
+      "cart_value": 138.23,
+      "views_before_cart": 1.0,
+      "time_to_cart": 32.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2432425875808236,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1655864342821775,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.052135256420888156,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your auto part is ready to check out, and we offer a 30-day fitment guarantee on your $138.23 purchase to ensure it is perfect."
+    },
+    {
+      "test_row_index": 16230,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4140163064002991,
+      "category": "electronics",
+      "cart_value": 200.52,
+      "views_before_cart": 9.0,
+      "time_to_cart": 383.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.35286958333549673,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2367674914572937,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12215058244456727,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $200.52 electronics choice is backed by our 30-day satisfaction guarantee, so you can finalize your research with complete peace of mind."
+    },
+    {
+      "test_row_index": 18225,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4368307888507843,
+      "category": "electronics",
+      "cart_value": 173.98,
+      "views_before_cart": 3.0,
+      "time_to_cart": 199.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.1542678742567087,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "-0.25 < total_events_before_cart <= 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.07374552977019097,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.04978535078656419,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Only a few units of this electronic item remain at $173.98, so complete your order now to guarantee your delivery."
+    },
+    {
+      "test_row_index": 928,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.44976189732551575,
+      "category": "electronics",
+      "cart_value": 170.92,
+      "views_before_cart": 1.0,
+      "time_to_cart": 317.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.24391540511714435,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1557749639770296,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12807245393012404,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $170.92 electronics pick is waiting for you, and we offer a 30-day money-back guarantee if it does not meet your expectations."
+    },
+    {
+      "test_row_index": 5285,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.44603803753852844,
+      "category": "electronics",
+      "cart_value": 1955.75,
+      "views_before_cart": 2.0,
+      "time_to_cart": 193.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.10831807915760375,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.09612786723681596,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.06643538959677331,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "You can split the $1,955.75 cost of your new electronics into manageable monthly payments with our 0% financing options available at checkout."
+    },
+    {
+      "test_row_index": 8282,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.41496726870536804,
+      "category": "appliances",
+      "cart_value": 975.56,
+      "views_before_cart": 2.0,
+      "time_to_cart": 61.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.12112328964780579,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "avg_time_between_events > -0.01",
+          "feature_name": "avg_time_between_events",
+          "weight": 0.08506817533620986,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price > 0.30",
+          "feature_name": "avg_cart_item_price",
+          "weight": -0.06850038362356985,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $975.56 appliance purchase qualifies for 12-month 0% financing, making it easier to bring home the quality you selected today."
+    },
+    {
+      "test_row_index": 1861,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.402477890253067,
+      "category": "electronics",
+      "cart_value": 25.66,
+      "views_before_cart": 1.0,
+      "time_to_cart": 65.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2547553158689513,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15000415911300025,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.0542581995362739,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $25.66 electronics find is ready for checkout, and you have 30 days to return it if it is not the perfect fit."
+    },
+    {
+      "test_row_index": 13125,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.411148339509964,
+      "category": "electronics",
+      "cart_value": 128.32,
+      "views_before_cart": 5.0,
+      "time_to_cart": 923.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.36314009050944807,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.2238392995953062,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.13152986079313245,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and we offer a 30-day money-back guarantee to ensure this $128.32 investment meets your exact needs."
+    },
+    {
+      "test_row_index": 17094,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4204099774360657,
+      "category": "electronics",
+      "cart_value": 250.96,
+      "views_before_cart": 5.0,
+      "time_to_cart": 2419.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3711805418714858,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23033962232565744,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.127466685150744,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 the electronics you chose after checking out five different options are ready to ship with our 30-day satisfaction guarantee."
+    },
+    {
+      "test_row_index": 1498,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.39590221643447876,
+      "category": "unknown",
+      "cart_value": 28.42,
+      "views_before_cart": 1.0,
+      "time_to_cart": 30.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23356390601523364,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15853434895496088,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value <= -0.59",
+          "feature_name": "initial_cart_value",
+          "weight": -0.06486773231536762,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $28.42 find is ready to ship, and you have 30 days to decide if it is the perfect fit for your needs."
+    },
+    {
+      "test_row_index": 10925,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.3863954544067383,
+      "category": "electronics",
+      "cart_value": 132.05,
+      "views_before_cart": 8.0,
+      "time_to_cart": 452.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.35839247067717067,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.23662418856671844,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12938115654388863,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Great pick \u2014 after comparing your options, your $132.05 electronics choice is ready to ship with our 30-day hassle-free return policy."
+    },
+    {
+      "test_row_index": 15369,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4491081237792969,
+      "category": "electronics",
+      "cart_value": 88.81,
+      "views_before_cart": 1.0,
+      "time_to_cart": 50.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2705271119054913,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.1669948878132512,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.07 < time_to_cart <= -0.06",
+          "feature_name": "time_to_cart",
+          "weight": 0.06046179492979385,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $88.81 electronics choice is waiting for you, and we offer a 30-day money-back guarantee if you need more time to test it."
+    },
+    {
+      "test_row_index": 5090,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4136129915714264,
+      "category": "electronics",
+      "cart_value": 145.23,
+      "views_before_cart": 1.0,
+      "time_to_cart": 117.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.2379738836094074,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.17202625897248502,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "-0.06 < time_to_cart <= -0.03",
+          "feature_name": "time_to_cart",
+          "weight": 0.05169045879418709,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $145.23 electronics selection is ready, and we offer a 30-day money-back guarantee if you need more time to be sure."
+    },
+    {
+      "test_row_index": 7864,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.4273246228694916,
+      "category": "electronics",
+      "cart_value": 145.23,
+      "views_before_cart": 1.0,
+      "time_to_cart": 176.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23501752279359306,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.16557009155971358,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "event_acceleration <= -0.00",
+          "feature_name": "event_acceleration",
+          "weight": -0.05482753885907946,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your electronics selection is ready to ship, and we offer a 30-day return window on your $145.23 purchase to ensure you are completely satisfied."
+    },
+    {
+      "test_row_index": 9778,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.3941571116447449,
+      "category": "unknown",
+      "cart_value": 92.64,
+      "views_before_cart": 5.0,
+      "time_to_cart": 121.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart > 0.11",
+          "feature_name": "total_events_before_cart",
+          "weight": 0.3448100814093957,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "views_before_cart > 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.24255162479688563,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "avg_cart_item_price <= -0.60",
+          "feature_name": "avg_cart_item_price",
+          "weight": 0.052305678224153496,
+          "category": "price_hesitation"
+        }
+      ],
+      "intervention": "Your $92.64 selection is a solid choice, and you can shop confidently knowing we offer free returns if it isn't the perfect fit."
+    },
+    {
+      "test_row_index": 8063,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.3983061611652374,
+      "category": "electronics",
+      "cart_value": 1415.48,
+      "views_before_cart": 4.0,
+      "time_to_cart": 1781.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "time_to_cart > -0.03",
+          "feature_name": "time_to_cart",
+          "weight": -0.12457675876996668,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_value > 0.28",
+          "feature_name": "initial_cart_value",
+          "weight": 0.1229853002916584,
+          "category": "price_hesitation"
+        },
+        {
+          "feature_condition": "-0.25 < views_before_cart <= 0.11",
+          "feature_name": "views_before_cart",
+          "weight": -0.0787694189895495,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $1,415 electronics investment comes with our 30-day performance guarantee, ensuring you have total peace of mind after your purchase."
+    },
+    {
+      "test_row_index": 5822,
+      "cohort": "misclassified",
+      "actual": 1,
+      "predicted_prob_purchase": 0.44173097610473633,
+      "category": "electronics",
+      "cart_value": 131.02,
+      "views_before_cart": 1.0,
+      "time_to_cart": 100.0,
+      "top_3_reasons": [
+        {
+          "feature_condition": "total_events_before_cart <= -0.43",
+          "feature_name": "total_events_before_cart",
+          "weight": -0.23613635560504947,
+          "category": "browse_indecision"
+        },
+        {
+          "feature_condition": "initial_cart_items <= -0.07",
+          "feature_name": "initial_cart_items",
+          "weight": 0.18342081723201234,
+          "category": "cart_composition"
+        },
+        {
+          "feature_condition": "views_before_cart <= -0.43",
+          "feature_name": "views_before_cart",
+          "weight": 0.15944609286596223,
+          "category": "browse_indecision"
+        }
+      ],
+      "intervention": "Your $131.02 electronics choice is a solid pick, and we include a full 30-day return window if you need more time to test it."
+    }
+  ]
+}
